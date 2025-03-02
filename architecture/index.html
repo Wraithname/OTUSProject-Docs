@@ -407,7 +407,7 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.</span> Компонентная архитектура<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">8.1</span> Обоснование выбора архитектурного стиля<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<p>Микросервисная архитектура является эффективным подходом для разработки приложений, которые должны масштабироваться и быть гибкими в изменении. В случае приложения для бронирования столиков в ресторанах, микросервисная архитектура может предоставить следующие преимущества:</p>
+<p>Микросервисная архитектура является эффективным подходом для разработки приложений, которые должны масштабироваться и быть гибкими в изменении. В случае приложения для анализа объектов БД, микросервисная архитектура может предоставить следующие преимущества:</p>
 <ul>
 <li>
 <p>Гибкость: Микросервисы могут быть разработаны и развернуты независимо друг от друга, что позволяет быстро вносить изменения в приложение без необходимости перезапуска всего приложения.</p>
@@ -443,142 +443,72 @@
 <tr>
 <td>1</td>
 <td>Container</td>
-<td>Client registration service</td>
-<td>C#, .NET</td>
-<td>Регистрация клиента</td>
+<td>Компонент работы с базами данных</td>
+<td>Spring Service</td>
+<td>Работа пользователей по осуществелнию миграции объектов БД</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Container</td>
-<td>Client registration database</td>
+<td>БД Источник</td>
 <td>PostgreSQL</td>
-<td>Хранение данных регистрации клиентов</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Container</td>
-<td>User registration service</td>
-<td>C#, .NET</td>
-<td>Регистрация пользователя</td>
+<td>Хранение данных по объектам БД и процессу миграции</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Container</td>
-<td>User registration database</td>
+<td>БД Миграции</td>
 <td>PostgreSQL</td>
-<td>Хранение данных регистрации пользователей</td>
+<td>Хранение данных по новым объектам БД в процессе миграции</td>
 </tr>
 <tr>
-<td>5</td>
+<td>3</td>
 <td>Container</td>
-<td>Client account management service</td>
-<td>C#, .NET</td>
-<td>Управление личным кабинетом клиента: добавление, удаление, редактирование информации</td>
+<td>Компонент-хранилище информации о проектах, модулях и пользователях</td>
+<td>Spring Service</td>
+<td>Управление списком проектов и модулей, а также привязка пользователей к модулям, за которые они отвечают</td>
 </tr>
 <tr>
 <td>6</td>
 <td>Container</td>
-<td>Client account management database</td>
+<td>БД Списка модулей и пользователей</td>
 <td>PostgreSQL</td>
-<td>Хранение данных личных кабинетов клиентов</td>
+<td>Хранение данных списка проектов, модулей и привязанных пользоватеней к модулю</td>
 </tr>
 <tr>
 <td>7</td>
 <td>Container</td>
-<td>User account management service</td>
-<td>C#, .NET</td>
-<td>Управление личным кабинетом пользователя: добавление, удаление, редактирование информации</td>
+<td>Компонент расчёта данных</td>
+<td>Spring Service</td>
+<td>Расчёт статистических данных объектов БД в разрезе проектов и модулей</td>
 </tr>
 <tr>
 <td>8</td>
 <td>Container</td>
-<td>User account management database</td>
+<td>БД списка модулей и расчётов</td>
 <td>PostgreSQL</td>
-<td>Хранение данных личных кабинетов пользователей</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Container</td>
-<td>Booking table service</td>
-<td>C#, .NET</td>
-<td>Бронирование столика пользователем</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Container</td>
-<td>Booking table database</td>
-<td>PostgreSQL</td>
-<td>Хранение данных о бронированиях</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Container</td>
-<td>Web Application</td>
-<td>ASP.NET</td>
-<td>Взаимодействие между клиентами, пользователями и приложением</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Container</td>
-<td>Mobile App</td>
-<td>Flutter</td>
-<td>Взаимодействие между пользователями и приложением</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Container</td>
-<td>Logging system</td>
-<td>Elasticsearch</td>
-<td>Управление логированием и хранение логов</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Container</td>
-<td>Log UI</td>
-<td>Kibana</td>
-<td>Визуализация данных Elasticsearch</td>
-</tr>
-<tr>
-<td>15</td>
-<td>Container</td>
-<td>API Gateway</td>
-<td>Azure API</td>
-<td>Обеспечивает взаимодействие с внешними системами</td>
+<td>Хранение результатов расчёта статистики объектов БД с использованным списком проектов и модулей</td>
 </tr>
 <tr>
 <td>16</td>
 <td>External system</td>
-<td>Rusprofile</td>
+<td>API Gateway</td>
 <td></td>
-<td>Проверка контрагентов</td>
+<td>Шлюз взаимодействия сервисов</td>
 </tr>
 <tr>
 <td>17</td>
 <td>External system</td>
-<td>Google Maps</td>
+<td>JIRA</td>
 <td></td>
-<td>Просмотр информации о ресторанах на карте</td>
+<td>Система управления проектами и задачами</td>
 </tr>
 <tr>
 <td>18</td>
 <td>External system</td>
-<td>Google Analitycs</td>
+<td>RabbitMQ</td>
 <td></td>
-<td>Сбор и визуализация статистики посещения и использования сервиса</td>
-</tr>
-<tr>
-<td>19</td>
-<td>External system</td>
-<td>R-Keeper</td>
-<td></td>
-<td>Управление бронированием столиков</td>
-</tr>
-<tr>
-<td>20</td>
-<td>External system</td>
-<td>E-mail server</td>
-<td></td>
-<td>Хранение и передача сообщений информационных писем, подтверждение аккаунта</td>
+<td>Система взаимодействия сервисом для передачи данных</td>
 </tr>
 </tbody>
 </table>

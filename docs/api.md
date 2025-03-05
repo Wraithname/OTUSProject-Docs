@@ -1,7 +1,3 @@
-# API приложения
+# API приложения через gRPC
 
 ## Внутреннее общение через gRPC
-
-## Внешнее общение через REST
-
-<swagger-ui src= "https://raw.githubusercontent.com/Wraithname/AnalyseDBObject-Docs/master/docs/assets/BDAnalystic.yaml" />

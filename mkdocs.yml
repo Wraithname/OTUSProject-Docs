@@ -105,22 +105,19 @@ plugins:
 nav:
   - Домашняя страница:
     - index.md
-  - Документация:
+  - Глоссарий:
     - glossary.md
-  - Бизнес-требования:
+  - Документация бизнес-требований:
     - general info.md
     - goals.md
     - interviews.md
     - characteristics.md
     - business process.md
-  - Требования к приложению:
+  - Документация системы :
     - requirements.md
-  - Информационная модель:
     - model.md
-  - Архитектура:
     - architecture.md
     - uiux.md
-  - API:
     - api.md
   - Задачи:
     - ac/AC.md

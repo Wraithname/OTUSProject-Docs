@@ -119,9 +119,11 @@ nav:
     - architecture.md
     - uiux.md
     - api.md
-  - Задачи:
     - ac/AC.md
+  - Задачи:
     - tasks/US01.md
+    - tasks/US02.md
+    - tasks/US03.md
     - tasks/US04.md
     - tasks/US05.md
     - tasks/US06.md
@@ -133,6 +135,9 @@ nav:
     - tasks/US12.md
     - tasks/US13.md
     - tasks/US14.md
+    - tasks/US15.md
+    - tasks/US16.md
+    - tasks/US17.md
   - Тесты:
     - tests/US01.md
     - tests/US04.md

@@ -107,17 +107,23 @@ nav:
     - index.md
   - Документация:
     - glossary.md
+  - Бизнес-требования:
     - general info.md
     - goals.md
     - interviews.md
     - characteristics.md
     - business process.md
+  - Требования к приложению:
     - requirements.md
+  - Информационная модель:
     - model.md
+  - Архитектура:
     - architecture.md
     - uiux.md
+  - API:
     - api.md
   - Задачи:
+    - ac/AC.md
     - tasks/US01.md
     - tasks/US04.md
     - tasks/US05.md
@@ -130,5 +136,16 @@ nav:
     - tasks/US12.md
     - tasks/US13.md
     - tasks/US14.md
-  - Критерии:
-    - ac/AC.md
+  - Тесты:
+    - tests/US01.md
+    - tests/US04.md
+    - tests/US05.md
+    - tests/US06.md
+    - tests/US07.md
+    - tests/US08.md
+    - tests/US09.md
+    - tests/US10.md
+    - tests/US11.md
+    - tests/US12.md
+    - tests/US13.md
+    - tests/US14.md

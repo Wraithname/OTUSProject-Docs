@@ -117,11 +117,18 @@ nav:
     - architecture.md
     - uiux.md
     - api.md
-  - Критерии приёмки:
-    - ac/AC.md
   - Задачи:
-    - tasks/registration_client.md
-    - tasks/registration_user.md
-    - tasks/auth_client.md
-    - tasks/auth_user.md
-    - tasks/booking_table.md
+    - tasks/US01.md
+    - tasks/US04.md
+    - tasks/US05.md
+    - tasks/US06.md
+    - tasks/US07.md
+    - tasks/US08.md
+    - tasks/US09.md
+    - tasks/US10.md
+    - tasks/US11.md
+    - tasks/US12.md
+    - tasks/US13.md
+    - tasks/US14.md
+  - Критерии:
+    - ac/AC.md

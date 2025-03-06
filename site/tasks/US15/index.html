@@ -5,11 +5,11 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="../US10/" rel="prev"/>
-<link href="../US12/" rel="next"/>
+<link href="../US14/" rel="prev"/>
+<link href="../US16/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.5" name="generator"/>
-<title>Убедится в возможности перевода (MVP) - Анализ и сбор статистики по миграции объектов БД</title>
+<title>Фиксация статуса задачи в Jira (MVP) - Анализ и сбор статистики по миграции объектов БД</title>
 <link href="../../assets/stylesheets/main.8608ea7d.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../../css/lightgallery.min.css" rel="stylesheet"/>
@@ -34,7 +34,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#mvp">
+<a class="md-skip" href="#jira-mvp">
           Перейти к содержанию
         </a>
 </div>
@@ -58,7 +58,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Убедится в возможности перевода (MVP)
+              Фиксация статуса задачи в Jira (MVP)
             
           </span>
 </div>
@@ -472,18 +472,50 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US11/">
+<span class="md-ellipsis">
+    Убедится в возможности перевода (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US12/">
+<span class="md-ellipsis">
+    Автоматическая миграция таблиц (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US13/">
+<span class="md-ellipsis">
+    Автоматическая миграция таблиц (Release 1)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US14/">
+<span class="md-ellipsis">
+    Смена статуса выполнения миграции (MVP)
+    
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    Убедится в возможности перевода (MVP)
+    Фиксация статуса задачи в Jira (MVP)
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    Убедится в возможности перевода (MVP)
+    Фиксация статуса задачи в Jira (MVP)
     
   </span>
 </a>
@@ -516,38 +548,6 @@
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../US12/">
-<span class="md-ellipsis">
-    Автоматическая миграция таблиц (MVP)
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../US13/">
-<span class="md-ellipsis">
-    Автоматическая миграция таблиц (Release 1)
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../US14/">
-<span class="md-ellipsis">
-    Смена статуса выполнения миграции (MVP)
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../US15/">
-<span class="md-ellipsis">
-    Фиксация статуса задачи в Jira (MVP)
-    
-  </span>
-</a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US16/">
@@ -689,11 +689,11 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">22.</span> Убедится в возможности перевода (MVP)<a class="headerlink" href="#mvp" title="Permanent link">¶</a></h1>
-<h2 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">22.1</span> Цель задачи<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
-<h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">22.2</span> Что требуется<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<h2 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">22.3</span> Критерии приемки<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p><a href="../../ac/AC/#us13">US-13 Я как пользователь ХОЧУ видеть статусы перевода зависимых серверных объектов ЧТОБЫ принимать решение по целесообразности брать в работу по миграции данный объект</a></p>
+<h1 id="jira-mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">26.</span> Фиксация статуса задачи в Jira (MVP)<a class="headerlink" href="#jira-mvp" title="Permanent link">¶</a></h1>
+<h2 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">26.1</span> Цель задачи<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">26.2</span> Что требуется<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<h2 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">26.3</span> Критерии приемки<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p><a href="../../ac/AC/#us17">US-17 Я как пользователь ХОЧУ функционал автоматической смены статуса задачи в Jira ЧТОБЫ сократить время на ручные операции</a></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -705,7 +705,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: Убедится в возможности перевода (MVP)" class="md-footer__link md-footer__link--prev" href="../US10/">
+<a aria-label="Назад: Смена статуса выполнения миграции (MVP)" class="md-footer__link md-footer__link--prev" href="../US14/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -714,17 +714,17 @@
                 Назад
               </span>
 <div class="md-ellipsis">
-                Убедится в возможности перевода (MVP)
+                Смена статуса выполнения миграции (MVP)
               </div>
 </div>
 </a>
-<a aria-label="Вперед: Автоматическая миграция таблиц (MVP)" class="md-footer__link md-footer__link--next" href="../US12/">
+<a aria-label="Вперед: Фиксация результатов в журнале выполненных работ в Jira (MVP)" class="md-footer__link md-footer__link--next" href="../US16/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Вперед
               </span>
 <div class="md-ellipsis">
-                Автоматическая миграция таблиц (MVP)
+                Фиксация результатов в журнале выполненных работ в Jira (MVP)
               </div>
 </div>
 <div class="md-footer__button md-icon">

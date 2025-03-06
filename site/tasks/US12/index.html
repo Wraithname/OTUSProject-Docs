@@ -9,7 +9,7 @@
 <link href="../US13/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.5" name="generator"/>
-<title>Смена статуса выполнения миграции - Анализ и сбор статистики по миграции объектов БД</title>
+<title>Автоматическая миграция таблиц (MVP) - Анализ и сбор статистики по миграции объектов БД</title>
 <link href="../../assets/stylesheets/main.8608ea7d.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../../css/lightgallery.min.css" rel="stylesheet"/>
@@ -34,7 +34,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#mvp">
           Перейти к содержанию
         </a>
 </div>
@@ -58,7 +58,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Смена статуса выполнения миграции
+              Автоматическая миграция таблиц (MVP)
             
           </span>
 </div>
@@ -163,7 +163,7 @@
         </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="../../ac/AC/">
+<a class="md-tabs__link" href="../US01/">
           
   
     
@@ -366,6 +366,14 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../ac/AC/">
+<span class="md-ellipsis">
+    Acceptance Criteria, Definition of Ready &amp; Definition of Done
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -385,17 +393,25 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../ac/AC/">
+<a class="md-nav__link" href="../US01/">
 <span class="md-ellipsis">
-    Acceptance Criteria, Definition of Ready &amp; Definition of Done
+    Просмотр актуального списка проектов и модулей (MVP)
     
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../US01/">
+<a class="md-nav__link" href="../US02/">
 <span class="md-ellipsis">
-    Просмотр актуального списка проектов и модулей
+    Просмотр ответственных за проект и модуль (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US03/">
+<span class="md-ellipsis">
+    Создание задачи на миграцию объекта (MVP)
     
   </span>
 </a>
@@ -403,7 +419,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US04/">
 <span class="md-ellipsis">
-    Просмотр ответственных за проект и модуль
+    Отправка списка зарегистрированных задач (MVP)
     
   </span>
 </a>
@@ -411,7 +427,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US05/">
 <span class="md-ellipsis">
-    Создание задачи на миграцию объекта
+    Просмотр сводного отчёта по переведённым объектам БД (MVP)
     
   </span>
 </a>
@@ -419,7 +435,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US06/">
 <span class="md-ellipsis">
-    Отправка списка зарегистрированных задач
+    Просмотр сводного отчёта по переведённым объектам БД (MVP)
     
   </span>
 </a>
@@ -427,7 +443,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US07/">
 <span class="md-ellipsis">
-    Просмотр сводного отчёта по переведённым объектам БД
+    Запустить процесс анализа (MVP)
     
   </span>
 </a>
@@ -435,7 +451,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US08/">
 <span class="md-ellipsis">
-    Запустить процесс анализа
+    Запустить процесс анализа (MVP)
     
   </span>
 </a>
@@ -443,7 +459,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US09/">
 <span class="md-ellipsis">
-    Установить периодичность анализа процесса миграции
+    Установить периодичность анализа процесса миграции (MVP)
     
   </span>
 </a>
@@ -451,7 +467,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US10/">
 <span class="md-ellipsis">
-    Убедится в возможности перевода
+    Убедится в возможности перевода (MVP)
     
   </span>
 </a>
@@ -459,7 +475,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US11/">
 <span class="md-ellipsis">
-    Автоматическая миграция таблиц
+    Убедится в возможности перевода (MVP)
     
   </span>
 </a>
@@ -468,14 +484,14 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    Смена статуса выполнения миграции
+    Автоматическая миграция таблиц (MVP)
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    Смена статуса выполнения миграции
+    Автоматическая миграция таблиц (MVP)
     
   </span>
 </a>
@@ -486,22 +502,25 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#mvp">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      MVP
-    </span>
-</a>
-<nav aria-label="MVP" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#us-16">
-<span class="md-ellipsis">
-      US-16 Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены
+      Цель задачи
     </span>
 </a>
 </li>
-</ul>
-</nav>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      Что требуется
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      Критерии приемки
+    </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -509,7 +528,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US13/">
 <span class="md-ellipsis">
-    Фиксация статуса задачи в Jira
+    Автоматическая миграция таблиц (Release 1)
     
   </span>
 </a>
@@ -517,7 +536,31 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../US14/">
 <span class="md-ellipsis">
-    Фиксация результатов в журнале выполненных работ в Jira
+    Смена статуса выполнения миграции (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US15/">
+<span class="md-ellipsis">
+    Фиксация статуса задачи в Jira (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US16/">
+<span class="md-ellipsis">
+    Фиксация результатов в журнале выполненных работ в Jira (MVP)
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../US17/">
+<span class="md-ellipsis">
+    Фиксация результатов в журнале выполненных работ в Jira (Release 1)
     
   </span>
 </a>
@@ -646,10 +689,11 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">21.</span> Смена статуса выполнения миграции<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<h2 id="mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">21.1</span> MVP<a class="headerlink" href="#mvp" title="Permanent link">¶</a></h2>
-<h3 id="us-16"><span class="enumerate-headings-plugin enumerate-heading-plugin">21.1.1</span> <a href="../../ac/AC/#us16">US-16 Я как пользователь ХОЧУ сменить статус выполнения миграции объекта БД ЧТОБЫ показать, что работы по миграции объекта БД завершены</a><a class="headerlink" href="#us-16" title="Permanent link">¶</a></h3>
-<h4 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">21.1.1.1</span> Задачи<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<h1 id="mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">23.</span> Автоматическая миграция таблиц (MVP)<a class="headerlink" href="#mvp" title="Permanent link">¶</a></h1>
+<h2 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">23.1</span> Цель задачи<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">23.2</span> Что требуется<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<h2 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">23.3</span> Критерии приемки<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
+<p><a href="../../ac/AC/#us14">US-14 Я как пользователь ХОЧУ произвести миграцию таблицы базы данных по одной кнопке ЧТОБЫ сократить время миграции и сконцентрироваться на других объектах БД проекта</a></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -661,7 +705,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: Автоматическая миграция таблиц" class="md-footer__link md-footer__link--prev" href="../US11/">
+<a aria-label="Назад: Убедится в возможности перевода (MVP)" class="md-footer__link md-footer__link--prev" href="../US11/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -670,17 +714,17 @@
                 Назад
               </span>
 <div class="md-ellipsis">
-                Автоматическая миграция таблиц
+                Убедится в возможности перевода (MVP)
               </div>
 </div>
 </a>
-<a aria-label="Вперед: Фиксация статуса задачи в Jira" class="md-footer__link md-footer__link--next" href="../US13/">
+<a aria-label="Вперед: Автоматическая миграция таблиц (Release 1)" class="md-footer__link md-footer__link--next" href="../US13/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Вперед
               </span>
 <div class="md-ellipsis">
-                Фиксация статуса задачи в Jira
+                Автоматическая миграция таблиц (Release 1)
               </div>
 </div>
 <div class="md-footer__button md-icon">

@@ -2,8 +2,8 @@
 site_name: Система автоматического контроля, сбора, классификации и предоставления статистики по процессу миграции ЦАБС
 
 # Repository
-repo_name: Wraithname/AnalyseDBObject-Docs
-repo_url: https://github.com/Wraithname/AnalyseDBObject-Docs
+repo_name: Wraithname/OTUSProject-Docs
+repo_url: https://github.com/Wraithname/OTUSProject-Docs
 
 theme:
   custom_dir: 'theme'

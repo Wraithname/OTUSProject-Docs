@@ -91,6 +91,12 @@ plugins:
       border: 5
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      request_timeout: 300
+      verify_ssl: false
+      verbose: false
+      theme:
+        light: glightbox/frappe
+        dark: glightbox/mocha 
   - enumerate-headings:
       exclude:
         - index.md

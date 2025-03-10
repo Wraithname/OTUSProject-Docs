@@ -16,11 +16,11 @@
 - Расширенная история по элементам клиентской части
 - Пользователь
 
-![](diagrams/out/DDDSergo.svg)
+![](diagrams/src/OTUS_Sergo.puml)
 
 ## Модель данных сервиса расчёта статистики по процессу миграции
 
-![](assets/images/ERD.png)
+![](assets/images/OTUS-Sergo.png)
 
 ## Модель предметной области для сервиса получения данных по процессу миграции объектов БД
 
@@ -37,11 +37,11 @@
 - Журнал работ по задачам в Jira
 - Пользователь
 
-![](diagrams/out/DDD.svg)
+![](diagrams/src/OTUS_Project.puml)
 
 ## Модель данных сервиса получения данных по процессу миграции объектов БД
 
-![](assets/images/ERD.png)
+![](assets/images/OTUS-Alex.png)
 
 ## Модель предметной области для сервиса получения данных по процессу миграции Jar
 
@@ -58,8 +58,8 @@
 - Журнал работ по задачам в Jira
 - Пользователь
 
-![](diagrams/out/DDD.svg)
+![](diagrams/src/OTUS_Rus.puml)
 
 ## Модель данных сервиса получения данных по процессу миграции Jar
 
-![](assets/images/ERD.png)
+![](assets/images/OTUS-Rus.png)

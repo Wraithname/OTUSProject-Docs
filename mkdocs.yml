@@ -82,7 +82,7 @@ plugins:
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - swagger-ui-tag
   - drawio:
-      viewer_js: "https://viewer.diagrams.net/js/viewer-static.min.js"
+      viewer_js: https://viewer.diagrams.net/js/viewer-static.min.js
       toolbar: true
       tooltips: true
       edit: false

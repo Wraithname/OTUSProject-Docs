@@ -103,7 +103,9 @@ plugins:
   # - print-site:
   #     path_to_pdf: "assets/test.pdf"
   - glightbox
-
+extra_javascript:
+  - theme/js/viewer-static.min.js
+  - theme/js/drawio-reload.js
 nav:
   - Домашняя страница:
     - index.md

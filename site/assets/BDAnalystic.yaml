@@ -1,0 +1,426 @@
+openapi: 3.0.0
+info:
+  title: AnalyseDBObject API
+  description: API спецификация для приложения анализа статистики объектов БД
+  version: "1.0.0"
+
+paths:
+  /dbobjects:
+    get:
+      tags:
+        - Объекты БД
+      summary: Список объектов БД
+      security: []
+      description: Получить список объектов БД
+      operationId: getDbObjects
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ObjectsList'
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+  /dbobjects/calculate:
+    post:
+      tags:
+        - Объекты БД
+      summary: Запуск расчёта статистики
+      description: Запуск расчёта статистики
+      operationId: runCalculateDB
+      parameters:
+        - $ref: '#/components/parameters/date'
+      responses:
+        '200':
+          description: OK
+          content:
+            application\json:
+              schema:
+                $ref: '#/components/parameters/calcID'
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+  /dbobjects/calculate/projects:
+    post:
+      tags:
+        - Объекты БД
+      summary: Запуск расчёта статистики по проекту
+      description: Запуск расчёта статистики по проекту
+      operationId: runCalculateDBProject
+      parameters:
+        - $ref: '#/components/parameters/date'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/prjIDList'
+      responses:
+        '200':
+          description: OK
+          content:
+            application\json:
+              schema:
+                $ref: '#/components/parameters/calcID'
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+  /dbobjects/calculate/projects/modules:
+    post:
+      tags:
+        - Объекты БД
+      summary: Запуск расчёта статистики по модулю
+      description: Запуск расчёта статистики по модулю
+      operationId: runCalculateDBModule
+      parameters:
+        - $ref: '#/components/parameters/date'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/modIDList'
+      responses:
+        '200':
+          description: OK
+          content:
+            application\json:
+              schema:
+                $ref: '#/components/parameters/calcID'
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+  /dbobjects/calculate/projects/modules/funcparts:
+    post:
+      tags:
+        - Объекты БД
+      summary: Запуск расчёта статистики по функциональной части
+      description: Запуск расчёта статистики по функциональной части
+      operationId: runCalculateDBFuncParts
+      parameters:
+        - $ref: '#/components/parameters/date'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/parameters/funIDList'
+      responses:
+        '200':
+          description: OK
+          content:
+            application\json:
+              schema:
+                $ref: '#/components/parameters/calcID'
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+  /projects:
+    post:
+      tags:
+        - Список проектов, модулей и функциональных частей
+      summary: Добавить проекты, модули и функциональные части
+      description: Добавление новых проектов, модулей и функциональных частей другим сервисом
+      operationId: addProjectList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectList'
+              type: array
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+    put:
+      tags:
+        - Список проектов, модулей и функциональных частей
+      summary: Обновить проекты, модули и функциональные части
+      description: Обновление проектов, модулей и функциональных частей другим сервисом
+      operationId: updProjectList
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProjectList'
+      responses:
+        '200':
+          description: OK
+        '401':
+          $ref: '#/components/responses/401'
+        '404':
+          $ref: '#/components/responses/404'
+components:
+  schemas:
+    Projects:
+      required:
+        -UUID
+        -Name
+      type: object
+      properties:
+        UUID:
+          allOf:
+            - $ref: '#/components/parameters/prjID'
+          type: string
+        Name:
+          description: Название проекта
+          nullable: false
+          type: string
+        Description:
+          description: Описание проекта
+          nullable: true
+          type: string
+    Modules:
+      required:
+        - UUID
+        - Name
+        - ProjectUUID
+      type: object
+      properties:
+        UUID:
+          allOf:
+            - $ref: '#/components/parameters/modID'
+              type: string
+        Name:
+          description: Название модуля
+          nullable: false
+          type: string
+        Description:
+          description: Описание модуля
+          nullable: true
+          type: string
+        ProjectUUID:
+          allOf:
+            - $ref: '#/components/parameters/prjID'
+              type: string
+    Funcpart:
+      required:
+        - UUID
+        - Name
+        - ModuleUUID
+      type: object
+      properties:
+        UUID:
+          allOf:
+            - $ref: '#/components/parameters/funPID'
+              type: string
+        Name:
+          description: Название функциональной части
+          nullable: false
+          type: string
+        Description:
+          description: описание функциональной части
+          nullable: true
+          type: string
+        ModuleUUID:
+          allOf:
+            - $ref: '#/components/parameters/modID'
+              type: string
+    ObjectsList:
+      required:
+        - ObjectId
+        - Schema
+        - Name
+        - Type
+      type: object
+      properties:
+        ObjectId:
+          description: Идентификатор объекта
+          nullable: false
+          oneOf:
+            - type: string
+            - type: integer
+        Schema:
+          description: Схема объекта
+          nullable: false
+          type: string
+        Name:
+          description: Название объекта
+          nullable: false
+          type: string
+        Type:
+          description: Тип объекта БД
+          nullable: false
+          type: string
+    ProjectList:
+      required:
+        - ListProjects
+        - ListModules
+        - ListFuncParts
+      type: array
+      properties:
+        ListProjects:
+          allOf:
+            - $ref: '#/components/schemas/Projects'
+          type: array
+        ListModules:
+          allOf:
+            - $ref: '#/components/schemas/Modules'
+          type: array
+        ListFuncParts:
+          allOf:
+            - $ref: '#/components/schemas/Funcpart'
+          type: array
+  responses:
+    '404':
+      description: Что-то пошло не так...
+      content:
+        application/json:
+          schema:
+            required:
+              - code
+              - errorId
+              - messageEn
+              - messageRu
+            type: object
+            properties:
+              errorId:
+                type: integer
+              code:
+                maximum: 599
+                minimum: 400
+                type: integer
+              messageRu:
+                maxLength: 500
+                minLength: 1
+                pattern: "([А-Яа-я0-9-]+)"
+                type: string
+                nullable: false
+              messageEn:
+                maxLength: 500
+                minLength: 1
+                pattern: "([A-Za-z0-9-]+)"
+                type: string
+                nullable: false
+            description: Текст сообщения об ошибке
+    '401':
+      description: Аутентификация произошла с ошибкой
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+  parameters:
+    prjID:
+      name: prjID
+      in: path
+      description: UUID проекта
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+    prjIDList:
+      name: prjIDList
+      in: path
+      description: Лист UUID проектов
+      required: true
+      style: simple
+      example: 123e4567-e89b-12d3-a456-426655440000,567e8901-e23b-45d1-a456-426655440000,098e7654-e32b-12d3-a456-426655440000
+      schema:
+        type: array
+        items:
+          $ref: '#/components/parameters/prjID'
+    modID:
+      name: modId
+      in: path
+      description: UUID модуля
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: string
+    modIDList:
+      name: modIDList
+      in: path
+      description: Лист UUID модулей
+      required: true
+      style: simple
+      example: 123e4567-e89b-12d3-a456-426655440000,567e8901-e23b-45d1-a456-426655440000,098e7654-e32b-12d3-a456-426655440000
+      schema:
+        type: array
+        items:
+          $ref: '#/components/parameters/modID'
+    funPID:
+      name: funPId
+      in: path
+      description: UUID функциональной части
+      required: true
+      style: simple
+      explode: false
+      schema:
+        type: integer
+    funIDList:
+      name: modIDList
+      in: path
+      description: Лист UUID функциональных частей
+      required: true
+      style: simple
+      example: 123e4567-e89b-12d3-a456-426655440000,567e8901-e23b-45d1-a456-426655440000,098e7654-e32b-12d3-a456-426655440000
+      schema:
+        type: array
+        items:
+          $ref: '#/components/parameters/funPID'
+    offsetParam:
+      name: offset
+      in: query
+      description: Номер первого элемента на странице
+      required: false
+      style: form
+      explode: true
+      schema:
+        minimum: 1
+        type: integer
+        default: 1
+    limitParam:
+      name: limit
+      in: query
+      description: Количество элементов на странице
+      required: false
+      style: form
+      explode: true
+      schema:
+        maximum: 100
+        minimum: 5
+        type: integer
+        default: 20
+    date:
+      name: Дата составления
+      in: path
+      description: Дата составления расчёта
+      required: true
+      style: form
+      example: 01-01-2025_00:00:01
+      explode: true
+      schema:
+        type: string
+    calcID:
+      name: Идентификатор расчёта
+      in: path
+      description: Идентификатор расчёта статистики объектов
+      required: true
+      style: form
+      example: 567e8901-e23b-45d1-a456-426655440000
+      explode: true
+      schema:
+        type: string
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      name: apiKey
+      in: query
+security:
+  - apiKey: []
+
+  

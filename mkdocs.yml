@@ -118,17 +118,10 @@ nav:
     - api.md
     - ac/AC.md
   - Задачи:
+    - tasks/USSCMS.md
     - tasks/USSDTODB.md
+    - tasks/USSDTA.md
   - Тесты:
-    - tests/USSDTODBUS01.md
-    - tests/USSDTODBUS04.md
-    - tests/USSDTODBUS05.md
-    - tests/USSDTODBUS06.md
-    - tests/USSDTODBUS07.md
-    - tests/USSDTODBUS08.md
-    - tests/USSDTODBUS09.md
-    - tests/USSDTODBUS10.md
-    - tests/USSDTODBUS11.md
-    - tests/USSDTODBUS12.md
-    - tests/USSDTODBUS13.md
-    - tests/USSDTODBUS14.md
+    - tests/USSCMS.md
+    - tests/USSDTODB.md
+    - tests/USSDTA.md

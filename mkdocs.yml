@@ -121,8 +121,10 @@ nav:
     - tasks/USSCMS.md
     - tasks/USSDTODB.md
     - tasks/USSDTA.md
-    - ac/AC.md
   - Тесты:
     - tests/USSCMS.md
     - tests/USSDTODB.md
     - tests/USSDTA.md
+
+not_in_nav: |
+  /ac/AC.md

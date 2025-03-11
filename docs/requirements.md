@@ -62,7 +62,7 @@
 
 #### **`USSDTODB`** User Story по сервису получения данных по процессу миграции объектов БД
 
-![](diagrams/out/US.svg)
+![](diagrams/out/USAlex.svg)
 
 #### **`USSDTA`** User Story по сервису получения данных по процессу миграции Jar
 

@@ -116,8 +116,8 @@ nav:
     - architecture.md
     - uiux.md
     - api.md
-    - ac/AC.md
   - Задачи:
+    - ac/AC.md
     - tasks/USSCMS.md
     - tasks/USSDTODB.md
     - tasks/USSDTA.md

@@ -117,10 +117,11 @@ nav:
     - uiux.md
     - api.md
   - Задачи:
-    - ac/AC.md
+    - ac/DoDDoR.md
     - tasks/USSCMS.md
     - tasks/USSDTODB.md
     - tasks/USSDTA.md
+    - ac/AC.md
   - Тесты:
     - tests/USSCMS.md
     - tests/USSDTODB.md

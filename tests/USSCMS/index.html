@@ -458,36 +458,29 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#-mvp">
+<a class="md-nav__link" href="#-migrxxi-001">
 <span class="md-ellipsis">
-      Тест-кейсы MVP
+      Тест-кейсы задачи MIGRXXI-001
     </span>
 </a>
-<nav aria-label="Тест-кейсы MVP" class="md-nav">
+<nav aria-label="Тест-кейсы задачи MIGRXXI-001" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#happy-path-testing">
 <span class="md-ellipsis">
-      Основной сценарий
+      Happy Path Testing
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#sad-path-testing">
 <span class="md-ellipsis">
-      Негативный сценарий
+      Sad Path Testing
     </span>
 </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#-release-1">
-<span class="md-ellipsis">
-      Тест-кейсы Release 1
-    </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -519,64 +512,77 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="-"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.</span> Тест-кейсы<a class="headerlink" href="#-" title="Permanent link">¶</a></h1>
-<h2 id="-mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1</span> Тест-кейсы MVP<a class="headerlink" href="#-mvp" title="Permanent link">¶</a></h2>
-<h3 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1.1</span> Основной сценарий<a class="headerlink" href="#_1" title="Permanent link">¶</a></h3>
+<h2 id="-migrxxi-001"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1</span> Тест-кейсы задачи MIGRXXI-001<a class="headerlink" href="#-migrxxi-001" title="Permanent link">¶</a></h2>
+<h3 id="happy-path-testing"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1.1</span> Happy Path Testing<a class="headerlink" href="#happy-path-testing" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
 <th>Шаг</th>
-<th>Описание шага</th>
-<th>Результат</th>
+<th>Действие</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td>Открыть форму приложения <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит главную форму приложения</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Пользователь выбирает проект "KERNEL" в навигационной панели</td>
-<td>В таблице показаны объекты проекта "KERNEL"</td>
 </tr>
 <tr>
 <td>3</td>
 <td>Пользователь выбирает модуль "INVO" в навигационной панели</td>
-<td>В таблице показаны объекты проекта "KERNEL", модуля "INVO"</td>
 </tr>
 <tr>
 <td>4</td>
 <td>Пользователь нажимает кнопку "Обновить структуру проектов и модулей"</td>
-<td>Пользователь видит процесс загрузки. После загрузки получает информационное сообщение "Структура проектов и модулей обновлена"</td>
+</tr>
+<tr>
+<td>----</td>
+<td>----------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td>Ожидаемы результат:</td>
+<td>Пользователь видит форму приложения. Навигация работает в штатном режиме - данные сортируются. Обновление структуры происходит без ошибок.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1.2</span> Негативный сценарий<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<h3 id="sad-path-testing"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.1.2</span> Sad Path Testing<a class="headerlink" href="#sad-path-testing" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
 <th>Шаг</th>
-<th>Описание шага</th>
-<th>Результат</th>
+<th>Действие</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
 <td>Открыть форму приложения <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит главную форму приложения</td>
 </tr>
 <tr>
 <td>2</td>
 <td>Пользователь нажимает кнопку "Обновить структуру проектов и модулей"</td>
-<td>Пользователь видит процесс загрузки. После нескольких секунд получает ошибку "Сервис проектов и модулей недоступен. Пожалуйста, попробуйте позднее"</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Пользователь выбирает модуль "INVO" в навигационной панели</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Пользователь нажимает кнопку "Обновить структуру проектов и модулей"</td>
+</tr>
+<tr>
+<td>----</td>
+<td>----------------------------------------------------------------------</td>
+</tr>
+<tr>
+<td>Ожидаемы результат:</td>
+<td>Пользователь видит форму приложения. После нажатия кнопки по прохождении 15 секунд выводится сообщение "Сервис недоступен. Пожалуйста попробуйте позднее"</td>
 </tr>
 </tbody>
 </table>
-<h2 id="-release-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">15.2</span> Тест-кейсы Release 1<a class="headerlink" href="#-release-1" title="Permanent link">¶</a></h2>
-<p><a href="../../ac/AC/#us02">US-02 Я как руководитель ХОЧУ использовать фильтры ЧТОБЫ быстро найти то что мне нужно</a></p>
-<p><a href="../../ac/AC/#us03">US-03 Я как руководитель ХОЧУ сохранять используемый фильтр ЧТОБЫ сократить время на заполнение необходимых полей в фильтре</a></p>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

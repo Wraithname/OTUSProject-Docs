@@ -3,7 +3,8 @@ site_name: Система автоматического контроля, сб�
 
 # Repository
 repo_name: Wraithname/OTUSProject-Docs
-repo_url: https://github.com/Wraithname/OTUSProject-Docs
+repo_url: https://github.com/Wraithname
+edit_uri: OTUSProject-Docs/
 
 theme:
   custom_dir: 'theme'

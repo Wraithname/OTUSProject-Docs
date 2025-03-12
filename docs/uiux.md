@@ -4,38 +4,43 @@
 
 Пользовательский интерфейс представлен в виде вайрфоеймов страниц приложения.
 
-### **`WF1`** Главная форма
+### **`WF1`** Форма аутентификации
 
-![](assets/images/main_page.png)
+![](assets/images/auth.png)
 
-### **`WF2`** Каталог проектов и модулей
+### **`WF2`** Главная форма
 
-![](assets/images/catalog.png)
+![](assets/images/selectModel.png)
 
-### Форма бронирования столиков
+### **`WF3`** Главная форма проекты
 
-#### **`WF6`** По количеству гостей  
-![](assets/images/booking_count.png)
+![](assets/images/Projects.png)
 
-#### **`WF7`** Из списка  
-![](assets/images/booking_list.png)
+### **`WF4`** Модули
 
-#### **`WF8`** На схеме расположения  
-![](assets/images/booking_map.png)
+![](assets/images/Models.png)
 
-### **`WF9`** Главная страница приложения для клиентов
+### Настройка проектов и модулей
 
-![](assets/images/main_page_clients.png)
+#### **`WF5`** Настройка проектов 
+![](assets/images/ProjectSettings.png)
 
-### **`WF10`** Форма регистрации клиенета
+#### **`WF6`** Настройка модулей  
+![](assets/images/ModelsSettings.png)
 
-![](assets/images/reg_client.png)
+### **`WF7`** Отчёты
 
-### **`WF11`** Личный кабинет клиента
+![](assets/images/Reports.png)
 
-![](assets/images/lk_client.png)
+### **`WF10`** Форма объектов БД
+
+![](assets/images/DBObjects.png)
+
+### **`WF11`** Артефакты
+
+![](assets/images/Artifacts.png)
 
 ## Прототип приложения
 
-Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/lRVhDoSioe3JRzBkb39OrH/%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%B4%D0%BB%D1%8F-%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F?page-id=0%3A1&type=design&node-id=2-2&viewport=4%2C111%2C0.39&scaling=scale-down&starting-point-node-id=2%3A2)
+Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/aQVyvsZ1yDN3ZdWWsGNL1K/Untitled?node-id=1-10020&p=f&t=yLoGvwliJPH8yVlu-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A10020)
 

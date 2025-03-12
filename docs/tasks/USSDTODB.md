@@ -10,7 +10,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS01] (../ac/AC.md#ussdtodb-acus01)                                                                                                          |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS01](../ac/AC.md#ussdtodb-acus01)                                                                                                        |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -28,7 +28,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS02] (../ac/AC.md#ussdtodb-acus02)   |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS02](../ac/AC.md#ussdtodb-acus02)   |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -46,7 +46,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS03] (../ac/AC.md#ussdtodb-acus03) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS03](../ac/AC.md#ussdtodb-acus03) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -64,7 +64,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS04] (../ac/AC.md#ussdtodb-acus04) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS04](../ac/AC.md#ussdtodb-acus04) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -82,7 +82,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS05] (../ac/AC.md#ussdtodb-acus05) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS05](../ac/AC.md#ussdtodb-acus05) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -100,7 +100,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS06] (../ac/AC.md#ussdtodb-acus06) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS06](../ac/AC.md#ussdtodb-acus06) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -118,7 +118,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS07] (../ac/AC.md#ussdtodb-acus07) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS07](../ac/AC.md#ussdtodb-acus07) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -136,7 +136,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS08] (../ac/AC.md#ussdtodb-acus08) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS08](../ac/AC.md#ussdtodb-acus08) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -154,7 +154,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS09] (../ac/AC.md#ussdtodb-acus09) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS09](../ac/AC.md#ussdtodb-acus09) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -172,7 +172,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS10] (../ac/AC.md#ussdtodb-acus10) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS10](../ac/AC.md#ussdtodb-acus10) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -190,7 +190,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS11] (../ac/AC.md#ussdtodb-acus11) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS11](../ac/AC.md#ussdtodb-acus11) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -208,7 +208,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS12] (../ac/AC.md#ussdtodb-acus12) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS12](../ac/AC.md#ussdtodb-acus12) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -226,7 +226,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS13] (../ac/AC.md#ussdtodb-acus13) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS13](../ac/AC.md#ussdtodb-acus13) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -244,7 +244,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS14] (../ac/AC.md#ussdtodb-acus14) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS14](../ac/AC.md#ussdtodb-acus14) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -262,7 +262,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS15] (../ac/AC.md#ussdtodb-acus15) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS15](../ac/AC.md#ussdtodb-acus15) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -280,7 +280,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS16] (../ac/AC.md#ussdtodb-acus16) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS16](../ac/AC.md#ussdtodb-acus16) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -298,7 +298,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS17] (../ac/AC.md#ussdtodb-acus17) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS17](../ac/AC.md#ussdtodb-acus17) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -316,7 +316,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS18] (../ac/AC.md#ussdtodb-acus18) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS18](../ac/AC.md#ussdtodb-acus18) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |
@@ -334,7 +334,7 @@
 | 6   | Автор                 | Орлов Александр Дмитриевич                                                                                                                             |
 | 7   | Кому назначено        | Inversion-Dev-Group                                                                                                                                    |
 | 8   | Размещение постановки | [User Story Map по USSDTODB](../requirements.md#ussdtodb-user-story)<br/>[Макет экранной формы](../uiux.md#wf4)<br/>[Таблицы PROJECT, MODULES, FUNC_PART, PROJECT_USER_CON](../ac/AC.md#us01)                                                                                                                                                                               |
-| 9   | Критерии приёмки      | [USSDTODB-ACUS19] (../ac/AC.md#ussdtodb-acus19) |
+| 9   | Критерии приёмки      | [USSDTODB-ACUS19](../ac/AC.md#ussdtodb-acus19) |
 | 10  | Статус                | В разработке                                                                                                                                           |
 | 11  | Приоритет             | Средний                                                                                                                                                |
 | 12  | Метка                 | #проекты_модули                                                                                                                                        |

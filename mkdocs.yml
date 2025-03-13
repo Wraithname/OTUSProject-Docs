@@ -34,7 +34,7 @@ theme:
     - navigation.top # Кнопка «назад-вверх»
     - navigation.footer # Переключение кнопками предыдущей/следующей страницы в футере
     - navigation.tabs # Навигационные вкладки
-    # - navigation.sections # Отображение верхних вкладок на панели слева
+    - navigation.sections # Отображение верхних вкладок на панели слева
     - navigation.indexes # Скрыть дублирование заголовка на панели слева.
     - toc.integrate # Интеграция подразделов в панель слева
     - toc.follow # Автоматическая прокрутка боковой панели при прокрутке
@@ -131,3 +131,4 @@ not_in_nav: |
   /ac/AC.md
   /tasks/assets/Alex/Seq.md
   /tasks/assets/Rus/Seq.md
+  /tasks/assets/Sergo/Seq.md

@@ -42,5 +42,4 @@
 
 ## Прототип приложения
 
-Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/aQVyvsZ1yDN3ZdWWsGNL1K/Untitled?node-id=1-10020&p=f&t=yLoGvwliJPH8yVlu-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A10020)
-
+Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/aQVyvsZ1yDN3ZdWWsGNL1K/Untitled?node-id=1-10020&p=f&t=4qYzgDsQ8jtIlAet-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A10020)

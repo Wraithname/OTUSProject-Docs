@@ -66,4 +66,4 @@
 
 #### **`USSDTA`** User Story по сервису получения данных по процессу миграции Jar
 
-![](diagrams/out/PGMigration.png)
+![](diagrams/out/USRus.svg)

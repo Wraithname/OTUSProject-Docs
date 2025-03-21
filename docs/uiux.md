@@ -4,38 +4,74 @@
 
 Пользовательский интерфейс представлен в виде вайрфоеймов страниц приложения.
 
-### **`WF1`** Главная форма
+### **`WF1`** Форма аутентификации
 
-![](assets/images/main_page.png)
+![](assets/images/auth.jpg)
 
-### **`WF2`** Каталог проектов и модулей
+### **`WF2`** Форма входа
 
-![](assets/images/catalog.png)
+![](assets/images/auth_form.jpg)
 
-### Форма бронирования столиков
+### **`WF3`** Проекты
 
-#### **`WF6`** По количеству гостей  
-![](assets/images/booking_count.png)
+![](assets/images/projects.jpg)
 
-#### **`WF7`** Из списка  
-![](assets/images/booking_list.png)
+### **`WF4`** Настройка проекта
 
-#### **`WF8`** На схеме расположения  
-![](assets/images/booking_map.png)
+![](assets/images/settings_project.jpg)
 
-### **`WF9`** Главная страница приложения для клиентов
+### **`WF5`** Привязка модуля к проекту
 
-![](assets/images/main_page_clients.png)
+![](assets/images/add_module_in_project.jpg)
 
-### **`WF10`** Форма регистрации клиенета
+### **`WF6`** Модули
 
-![](assets/images/reg_client.png)
+![](assets/images/modules.jpg)
 
-### **`WF11`** Личный кабинет клиента
+### **`WF7`** Настройка модуля
 
-![](assets/images/lk_client.png)
+![](assets/images/settings_module.jpg)
 
-## Прототип приложения
+### **`WF8`** Привязка объектов базы данных и артефактов к модулю
 
-Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/lRVhDoSioe3JRzBkb39OrH/%D0%A1%D0%B5%D1%80%D0%B2%D0%B8%D1%81-%D0%B4%D0%BB%D1%8F-%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F?page-id=0%3A1&type=design&node-id=2-2&viewport=4%2C111%2C0.39&scaling=scale-down&starting-point-node-id=2%3A2)
+![](assets/images/add_obgect_in_module.jpg)
 
+### **`WF9`** Объекты базы данных
+
+![](assets/images/bd_objects.jpg)
+
+### **`WF10`** Регистрация задаци на миграцию объекта базы данных
+
+![](assets/images/create_task_db_obj.jpg)
+
+### **`WF11`** Артефакты
+
+![](assets/images/artefacts.jpg)
+
+### **`WF12`** Регистрация задаци на миграцию артефакта
+
+![](assets/images/create_task_artefact.jpg)
+
+### **`WF13`** Форма отчеты
+
+![](assets/images/report.jpg)
+
+### **`WF14`** История отчетов по проектам
+
+![](assets/images/rep_history_projects.jpg)
+
+### **`WF15`** История отчетов по модулям
+
+![](assets/images/rep_history_modules.jpg)
+
+### **`WF16`** История отчетов по объектам
+
+![](assets/images/rep_history_object.jpg)
+
+### **`WF17`** Детальный отчет процесса миграции по конкретному объекту
+
+![](assets/images/history_object.jpg)
+
+## Прототип приложения 
+
+Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/aQVyvsZ1yDN3ZdWWsGNL1K/Untitled?node-id=1-10020&p=f&t=4qYzgDsQ8jtIlAet-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A10020)

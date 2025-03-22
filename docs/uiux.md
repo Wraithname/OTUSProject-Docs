@@ -40,7 +40,7 @@
 
 ![](assets/images/bd_objects.jpg)
 
-### **`WF10`** Регистрация задаци на миграцию объекта базы данных
+### **`WF10`** Регистрация задачи на миграцию объекта базы данных
 
 ![](assets/images/create_task_db_obj.jpg)
 
@@ -48,7 +48,7 @@
 
 ![](assets/images/artefacts.jpg)
 
-### **`WF12`** Регистрация задаци на миграцию артефакта
+### **`WF12`** Регистрация задачи на миграцию артефакта
 
 ![](assets/images/create_task_artefact.jpg)
 

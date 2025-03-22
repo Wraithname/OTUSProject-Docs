@@ -6,40 +6,72 @@
 
 ### **`WF1`** Форма аутентификации
 
-![](assets/images/auth.png)
+![](assets/images/auth.jpg)
 
-### **`WF2`** Главная форма
+### **`WF2`** Форма входа
 
-![](assets/images/selectModel.png)
+![](assets/images/auth_form.jpg)
 
-### **`WF3`** Главная форма проекты
+### **`WF3`** Проекты
 
-![](assets/images/Projects.png)
+![](assets/images/projects.jpg)
 
-### **`WF4`** Модули
+### **`WF4`** Настройка проекта
 
-![](assets/images/Models.png)
+![](assets/images/settings_project.jpg)
 
-### Настройка проектов и модулей
+### **`WF5`** Привязка модуля к проекту
 
-#### **`WF5`** Настройка проектов 
-![](assets/images/ProjectSettings.png)
+![](assets/images/add_module_in_project.jpg)
 
-#### **`WF6`** Настройка модулей  
-![](assets/images/ModelsSettings.png)
+### **`WF6`** Модули
 
-### **`WF7`** Отчёты
+![](assets/images/modules.jpg)
 
-![](assets/images/Reports.png)
+### **`WF7`** Настройка модуля
 
-### **`WF10`** Форма объектов БД
+![](assets/images/settings_module.jpg)
 
-![](assets/images/DBObjects.png)
+### **`WF8`** Привязка объектов базы данных и артефактов к модулю
+
+![](assets/images/add_obgect_in_module.jpg)
+
+### **`WF9`** Объекты базы данных
+
+![](assets/images/bd_objects.jpg)
+
+### **`WF10`** Регистрация задаци на миграцию объекта базы данных
+
+![](assets/images/create_task_db_obj.jpg)
 
 ### **`WF11`** Артефакты
 
-![](assets/images/Artifacts.png)
+![](assets/images/artefacts.jpg)
 
-## Прототип приложения
+### **`WF12`** Регистрация задаци на миграцию артефакта
+
+![](assets/images/create_task_artefact.jpg)
+
+### **`WF13`** Форма отчеты
+
+![](assets/images/report.jpg)
+
+### **`WF14`** История отчетов по проектам
+
+![](assets/images/rep_history_projects.jpg)
+
+### **`WF15`** История отчетов по модулям
+
+![](assets/images/rep_history_modules.jpg)
+
+### **`WF16`** История отчетов по объектам
+
+![](assets/images/rep_history_object.jpg)
+
+### **`WF17`** Детальный отчет процесса миграции по конкретному объекту
+
+![](assets/images/history_object.jpg)
+
+## Прототип приложения 
 
 Кликабельный прототип доступен по [ссылке](https://www.figma.com/proto/aQVyvsZ1yDN3ZdWWsGNL1K/Untitled?node-id=1-10020&p=f&t=4qYzgDsQ8jtIlAet-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A10020)

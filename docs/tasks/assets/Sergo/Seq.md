@@ -325,7 +325,7 @@ WEB--
 end loop
 @enduml
 ```
-## **`USSCMS-SEQD7`**
+## **`USSCMS-SEQD8`**
 ```uml
 @startuml
 header Система расчета статистики
@@ -366,7 +366,7 @@ WEB--
 end loop
 @enduml
 ```
-## **`USSCMS-SEQD8`**
+## **`USSCMS-SEQD9`**
 ```uml
 @startuml
 header Система расчета статистики
@@ -401,7 +401,7 @@ GATEWAY->WEB: Данные объектов БД
 GATEWAY--
 @enduml
 ```
-## **`USSCMS-SEQD9`**
+## **`USSCMS-SEQD10`**
 ```uml
 @startuml
 header Система расчета статистики

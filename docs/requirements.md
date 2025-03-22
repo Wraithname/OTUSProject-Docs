@@ -19,3 +19,7 @@
 ## **`USSDTA`** User Story по сервису получения данных по процессу миграции Jar
 
 ![](diagrams/out/USRus.svg)
+
+#### **`USSDTA`** User Story Map по сервису получения данных по процессу миграции Jar
+
+![](diagrams/out/USMRus.png)

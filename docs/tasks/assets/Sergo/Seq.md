@@ -1,12 +1,12 @@
 # Диаграммы последовательности сервиса получения данных по процессу миграции объектов БД
 
-## **`USSDTODB-SEQD1`**
-
+## **`USSCMS-SEQD1`**
 ```uml
 @startuml
 header Система расчета статистики
 title Создание модуля
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -41,12 +41,13 @@ CS->DB: Сохранение данных модуля
 CS--
 @enduml
 ```
-
+## **`USSCMS-SEQD2`**
 ```uml
 @startuml
 header Система расчета статистики
 title Создание задачи на миграцию объектов БД
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 boundary jira as JIRA
@@ -112,12 +113,13 @@ CS->DB: Обновление данных задачи
 CS--
 @enduml
 ```
-
+## **`USSCMS-SEQD3`**
 ```uml
 @startuml
 header Система расчета статистики
 title Создание задачи на миграцию артефактов
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 boundary jira as JIRA
@@ -182,12 +184,13 @@ CS->DB: Обновление данных задачи
 CS--
 @enduml
 ```
-
+## **`USSCMS-SEQD4`**
 ```uml
 @startuml
 header Система расчета статистики
 title Получение списка модулей
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -213,12 +216,13 @@ WEB--
 end alt
 @enduml
 ```
-
+## **`USSCMS-SEQD5`**
 ```uml
 @startuml
 header Система расчета статистики
 title Получение списка проектов
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 boundary jira as JIRA
@@ -240,12 +244,13 @@ GATEWAY->WEB: Список проектов
 GATEWAY--
 @enduml
 ```
-
+## **`USSCMS-SEQD6`**
 ```uml
 @startuml
 header Система расчета статистики
 title Получение общей статистики по системе
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -279,12 +284,13 @@ GATEWAY->WEB: Статистика по системе
 GATEWAY--
 @enduml
 ```
-
+## **`USSCMS-SEQD7`**
 ```uml
 @startuml
 header Система расчета статистики
 title Формирование отчета статистики миграции по объектам БД
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -319,12 +325,13 @@ WEB--
 end loop
 @enduml
 ```
-
+## **`USSCMS-SEQD7`**
 ```uml
 @startuml
 header Система расчета статистики
 title  Формирование отчета статистики миграции по артефактам
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -359,12 +366,13 @@ WEB--
 end loop
 @enduml
 ```
-
+## **`USSCMS-SEQD8`**
 ```uml
 @startuml
 header Система расчета статистики
 title Обновление структуры объектов БД
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS
@@ -393,12 +401,13 @@ GATEWAY->WEB: Данные объектов БД
 GATEWAY--
 @enduml
 ```
-
+## **`USSCMS-SEQD9`**
 ```uml
 @startuml
 header Система расчета статистики
 title Обновление структуры артефактов
 actor Пользователь as USER
+box #LightGreen  
 participant "WEB FORM" as WEB
 boundary GATEWAY as GATEWAY
 participant  "Calculation Service" as CS

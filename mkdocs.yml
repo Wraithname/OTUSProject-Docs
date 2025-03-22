@@ -108,7 +108,7 @@ nav:
   - Документация бизнес-требований:
     - general info.md
     - goals.md
-    - interviews.md
+    - ftnft.md
     - characteristics.md
     - business process.md
   - Документация системы :
@@ -132,3 +132,4 @@ not_in_nav: |
   /tasks/assets/Alex/Seq.md
   /tasks/assets/Rus/Seq.md
   /tasks/assets/Sergo/Seq.md
+  interviews.md

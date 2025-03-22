@@ -9,7 +9,7 @@
 <link href="../model/" rel="next"/>
 <link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.5" name="generator"/>
-<title>Требования к системе - Система автоматического контроля, сбора, классификации и предоставления статистики по процессу миграции ЦАБС</title>
+<title>User Story диаграммы - Система автоматического контроля, сбора, классификации и предоставления статистики по процессу миграции ЦАБС</title>
 <link href="../assets/stylesheets/main.8608ea7d.min.css" rel="stylesheet"/>
 <link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link href="../css/lightgallery.min.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#user-story">
           Перейти к содержанию
         </a>
 </div>
@@ -60,7 +60,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Требования к системе
+              User Story диаграммы
             
           </span>
 </div>
@@ -287,9 +287,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../interviews/">
+<a class="md-nav__link" href="../ftnft/">
 <span class="md-ellipsis">
-    Сбор требований
+    Требования к системе
     
   </span>
 </a>
@@ -332,14 +332,14 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    Требования к системе
+    User Story диаграммы
     
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    Требования к системе
+    User Story диаграммы
     
   </span>
 </a>
@@ -350,82 +350,25 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#usscms-user-story">
 <span class="md-ellipsis">
-      Требования к системе в целом
-    </span>
-</a>
-<nav aria-label="Требования к системе в целом" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      Производительность
+      USSCMS User Story по сервису расчёта статистики миграции
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#ussdtodb-user-story">
 <span class="md-ellipsis">
-      Безопасность
+      USSDTODB User Story по сервису получения данных по процессу миграции объектов БД
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
+<a class="md-nav__link" href="#ussdta-user-story-jar">
 <span class="md-ellipsis">
-      Надежность
+      USSDTA User Story по сервису получения данных по процессу миграции Jar
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-<span class="md-ellipsis">
-      Доступность
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      Особенности хранения данных
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      Концептуальная целостность
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      Поддерживаемость
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
-<span class="md-ellipsis">
-      Требования к функциям (задачам), выполняемым системой
-    </span>
-</a>
-<nav aria-label="Требования к функциям (задачам), выполняемым системой" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#user-story">
-<span class="md-ellipsis">
-      User Story диаграммы
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -564,42 +507,18 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.</span> Требования к системе<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
-<h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1</span> Требования к системе в целом<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
-<h3 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.1</span> Производительность<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<p><strong><code>NFPER1</code></strong> Система должна обслуживать нем менее 200 пользователей в период пиковой активности с 09:45 до 18:30 по местному времени, со средней продолжительностью сеанса 8 минут.    </p>
-<p><strong><code>NFPER2</code></strong> Система должна выводить пользователю сообщение о подтверждении в среднем за 3 секунды и не более чем через 6 секунд после того, как пользователь отослал информацию системе.  </p>
-<h3 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.2</span> Безопасность<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
-<p><strong><code>NFSEC1</code></strong> Система должна предусматривать аутентификацию пользователей в системе по почте и паролю.  </p>
-<p><strong><code>NFSEC2</code></strong> Пользователи должны обязательно иметь акктивную аутентифицироваться для выполнения любых действий в системе.</p>
-<p><strong><code>NFSEC3</code></strong> Система должна позволять пользователям просматривать все объекты БД, но редактировать информацию об объектах доступна только группы пользователей, занимающиеся этим проектом.</p>
-<p><strong><code>NFSEC4</code></strong> Работа внутри сети компании. Работа из внешней источников не предусматривается</p>
-<h3 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.3</span> Надежность<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
-<p><strong><code>NFROB1</code></strong> Вероятность возникновения критической ошибки должна составлять не более 10% в течении недели.  </p>
-<p><strong><code>NFROB2</code></strong> Если соединение между системой и сервисами разрывается до того, как пришёл запрос на сбор статистики или при отправки результатов запроса, система должна позволять восстановить незавершенные действия и продолжить работу.</p>
-<h3 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.4</span> Доступность<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
-<p><strong><code>NFAVL1</code></strong> Допустимое время простоя в сутки не более 30 минут.</p>
-<h3 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.5</span> Особенности хранения данных<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
-<p><strong><code>NFDT1</code></strong> История расчёта статистики миграции объектов БД должна храниться 2 года.  </p>
-<p><strong><code>NFDT2</code></strong> Бекапы БД должны храниться 7 дней с момента создания.</p>
-<h3 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.6</span> Концептуальная целостность<a class="headerlink" href="#_8" title="Permanent link">¶</a></h3>
-<p><strong><code>NFARC1</code></strong> Внешние точки входа в систему должны соответствовать архитектурному стилю REST.  </p>
-<h3 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1.7</span> Поддерживаемость<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
-<p><strong><code>NFSUP1</code></strong> Необходимо логировать действия пользователей в системе. Просмотр данных логов должен осуществляться через графический интерфейс. </p>
-<p><strong><code>NFSUP2</code></strong> Система должна обеспечивать мониторинг производительности с использованием графического интерфейса.</p>
-<h2 id="_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2</span> Требования к функциям (задачам), выполняемым системой<a class="headerlink" href="#_10" title="Permanent link">¶</a></h2>
+<h1 id="user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.</span> User Story диаграммы<a class="headerlink" href="#user-story" title="Permanent link">¶</a></h1>
 <p>Система состоит из четырёх сервисов:
  - Сервис аутентификации и авторизации
  - Сервис расчёта статистики по процессу миграции
  - Сервис получения данных по процессу миграции объектов БД
  - Сервис получения данных по процессу миграции Jar</p>
-<h3 id="user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2.1</span> User Story диаграммы<a class="headerlink" href="#user-story" title="Permanent link">¶</a></h3>
 <p>Основные функции системы представлены в виде User Story диаграмм.</p>
-<h4 id="usscms-user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2.1.1</span> <strong><code>USSCMS</code></strong> User Story по сервису расчёта статистики миграции<a class="headerlink" href="#usscms-user-story" title="Permanent link">¶</a></h4>
+<h2 id="usscms-user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.1</span> <strong><code>USSCMS</code></strong> User Story по сервису расчёта статистики миграции<a class="headerlink" href="#usscms-user-story" title="Permanent link">¶</a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../diagrams/out/USSergo.svg"><img alt="" src="../diagrams/out/USSergo.svg"/></a></p>
-<h4 id="ussdtodb-user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2.1.2</span> <strong><code>USSDTODB</code></strong> User Story по сервису получения данных по процессу миграции объектов БД<a class="headerlink" href="#ussdtodb-user-story" title="Permanent link">¶</a></h4>
+<h2 id="ussdtodb-user-story"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2</span> <strong><code>USSDTODB</code></strong> User Story по сервису получения данных по процессу миграции объектов БД<a class="headerlink" href="#ussdtodb-user-story" title="Permanent link">¶</a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../diagrams/out/USAlex.svg"><img alt="" src="../diagrams/out/USAlex.svg"/></a></p>
-<h4 id="ussdta-user-story-jar"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.2.1.3</span> <strong><code>USSDTA</code></strong> User Story по сервису получения данных по процессу миграции Jar<a class="headerlink" href="#ussdta-user-story-jar" title="Permanent link">¶</a></h4>
+<h2 id="ussdta-user-story-jar"><span class="enumerate-headings-plugin enumerate-heading-plugin">6.3</span> <strong><code>USSDTA</code></strong> User Story по сервису получения данных по процессу миграции Jar<a class="headerlink" href="#ussdta-user-story-jar" title="Permanent link">¶</a></h2>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../diagrams/out/USRus.svg"><img alt="" src="../diagrams/out/USRus.svg"/></a></p>
 </article>
 </div>

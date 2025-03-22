@@ -286,9 +286,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../interviews/">
+<a class="md-nav__link" href="../../ftnft/">
 <span class="md-ellipsis">
-    Сбор требований
+    Требования к системе
     
   </span>
 </a>
@@ -330,7 +330,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../requirements/">
 <span class="md-ellipsis">
-    Требования к системе
+    User Story диаграммы
     
   </span>
 </a>
@@ -481,16 +481,97 @@
 <nav aria-label="Тест-кейсы MVP" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#us-1">
 <span class="md-ellipsis">
-      Основной сценарий
+      US 1
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#us-2">
 <span class="md-ellipsis">
-      Негативный сценарий
+      US 2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us-3-">
+<span class="md-ellipsis">
+      US 3 - в разработке
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us-4">
+<span class="md-ellipsis">
+      US 4
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us-5-">
+<span class="md-ellipsis">
+      US 5 - в разработке (под вопросом)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us-6">
+<span class="md-ellipsis">
+      US 6
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac-1">
+<span class="md-ellipsis">
+      AC 1
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac-2">
+<span class="md-ellipsis">
+      AC 2
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac-3">
+<span class="md-ellipsis">
+      AC 3
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac-4">
+<span class="md-ellipsis">
+      AC 4
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us8">
+<span class="md-ellipsis">
+      US8
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-r1">
+<span class="md-ellipsis">
+      Тест-кейсы R1
+    </span>
+</a>
+<nav aria-label="Тест-кейсы R1" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#us7">
+<span class="md-ellipsis">
+      US7
     </span>
 </a>
 </li>
@@ -512,7 +593,8 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.</span> Просмотр ответственных за проект и модуль<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <h2 id="-mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1</span> Тест-кейсы MVP<a class="headerlink" href="#-mvp" title="Permanent link">¶</a></h2>
-<h3 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.1</span> Основной сценарий<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
+<h3 id="us-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.1</span> US 1<a class="headerlink" href="#us-1" title="Permanent link">¶</a></h3>
+<h4 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.1.1</span> Основной сценарий<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -524,22 +606,17 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Открыть форму аутентификации клиентов <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит форму аутентификации клиента</td>
+<td>Тестировщик отправляет запрос на запуск анализа по модулю, передавая id модуля "6ef0c579-299b-4c46-b7d7-55eb9760a6f4" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 0 (OK), uuid запроса и кол-во файлов (15).</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Заполнить логин (email) и пароль</td>
-<td>Пользователь видит заполненные логин и пароль</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Нажать кнопку аутентификации</td>
-<td>Выполняется переход в личный кабинет клиента</td>
+<td>Через 5 минут тестировщик подключается к тестовой очереди rabbitmq и получает все сообщения из нее</td>
+<td>Вывод 15-ти сообщений с результатами анализа</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.2</span> Негативный сценарий<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
+<h4 id="-"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.1.2</span> Негативный сценарий - несуществующий модуль<a class="headerlink" href="#-" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -551,48 +628,370 @@
 <tbody>
 <tr>
 <td>1</td>
-<td>Открыть форму аутентификации клиента <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит форму регистрации клиентов</td>
+<td>Тестировщик отправляет запрос на запуск анализа по модулю, передавая id модуля "6ef0c579-299b-4c46-b7d7-55eb9760a6f9" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID ARGUMENT).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.1.3</span> Нейтральный сценарий - к модулю не привязано ни одного файла<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на запуск анализа по модулю, передавая id модуля "6ef0c579-299b-4c46-b7d7-55eb9760a6f0" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 1 (Canceled).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="us-2"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.2</span> US 2<a class="headerlink" href="#us-2" title="Permanent link">¶</a></h3>
+<h4 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.2.1</span> Основной сценарий<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на запуск анализа по проекту, передавая id проекта "d461947f-db57-462e-8c21-67bab18c41b1" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 0 (OK), uuid запроса и кол-во файлов (45).</td>
 </tr>
 <tr>
 <td>2</td>
-<td>Заполнить логин (email) и пароль</td>
-<td>Пользователь видит заполненные логин и пароль</td>
+<td>Через 5 минут тестировщик подключается к тестовой очереди rabbitmq и получает все сообщения из нее</td>
+<td>Вывод 15-ти сообщений с результатами анализа</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.2.2</span> Негативный сценарий - несуществующий проект<a class="headerlink" href="#-_2" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на запуск анализа по проекту, передавая id проекта "d461947f-db57-462e-8c21-67bab18c41b1" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID ARGUMENT).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.2.3</span> Нейтральный сценарий - к проекту не привязано ни одного файла<a class="headerlink" href="#-_3" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на запуск анализа по проекта, передавая id проекта "d461947f-db57-462e-8c21-67bab18c41b1" и случайный uuid запроса</td>
+<td>Тестировщик получает ответ с кодом 1 (CANCELED).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="us-3-"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.3</span> US 3 - в разработке<a class="headerlink" href="#us-3-" title="Permanent link">¶</a></h3>
+<h3 id="us-4"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.4</span> US 4<a class="headerlink" href="#us-4" title="Permanent link">¶</a></h3>
+<h4 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.4.1</span> Основной сценарий<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на запуск полного анализа файлов клиентской части</td>
+<td>Тестировщик получает ответ с кодом 0 (OK), uuid запроса и кол-во файлов (100).</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Нажать кнопку аутентификации</td>
-<td>Выводится сообщение об ошибке аутентификации</td>
+<td>2</td>
+<td>Через 10 минут тестировщик подключается к тестовой очереди rabbitmq и получает все сообщения из нее</td>
+<td>Вывод 10-ти сообщений с результатами анализа</td>
 </tr>
+</tbody>
+</table>
+<h3 id="us-5-"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.5</span> US 5 - в разработке (под вопросом)<a class="headerlink" href="#us-5-" title="Permanent link">¶</a></h3>
+<h3 id="us-6"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.6</span> US 6<a class="headerlink" href="#us-6" title="Permanent link">¶</a></h3>
+<h3 id="ac-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.7</span> AC 1<a class="headerlink" href="#ac-1" title="Permanent link">¶</a></h3>
+<h4 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.7.1</span> Основной сценарий<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<table>
+<thead>
 <tr>
-<td>4</td>
-<td>Нажать кнопку восстановления пароля</td>
-<td>Выводится диалоговое окно восстановления пароля</td>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>5</td>
-<td>Ввести в диалоговое окно email, указанный при регистрации</td>
-<td></td>
+<td>1</td>
+<td>Тестировщик отправляет запрос на привязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" к модулю "6ef0c579-299b-4c46-b7d7-55eb9760a6f4"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
 </tr>
+</tbody>
+</table>
+<h4 id="-_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.7.2</span> Негативный сценарий - несуществующий модуль (под вопросом)<a class="headerlink" href="#-_4" title="Permanent link">¶</a></h4>
+<table>
+<thead>
 <tr>
-<td>6</td>
-<td>Нажать кнопку отправки сообщения для воостановления пароля</td>
-<td>Пользователю на указанный email приходит соощени со ссылкой на восстановление пароля</td>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>7</td>
-<td>Перейти по ссылке для восстановления пароля</td>
-<td>Выводится окно для ввода нового пароля</td>
+<td>1</td>
+<td>Тестировщик отправляет запрос на привязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" к модулю "6ef0c579-299b-4c46-b7d7-55eb9760a6f0"</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID ARGUMENT)</td>
 </tr>
+</tbody>
+</table>
+<h4 id="-_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.7.3</span> Негативный сценарий - несуществующий файл<a class="headerlink" href="#-_5" title="Permanent link">¶</a></h4>
+<table>
+<thead>
 <tr>
-<td>8</td>
-<td>Ввести новый пароль</td>
-<td></td>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>9</td>
-<td>Нажать кнопку сохранения нового пароля</td>
-<td>Выполняется переход в личный кабинет клиента</td>
+<td>1</td>
+<td>Тестировщик отправляет запрос на привязку файла с id "d461947f-db57-462e-8c21-67bab18c41b0" к модулю "6ef0c579-299b-4c46-b7d7-55eb9760a6f4"</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID ARGUMENT)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ac-2"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.8</span> AC 2<a class="headerlink" href="#ac-2" title="Permanent link">¶</a></h3>
+<h4 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.8.1</span> Основной сценарий<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на привязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" к проекту "d461947f-db57-462e-8c21-67bab18c41b1"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ac-3"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.9</span> AC 3<a class="headerlink" href="#ac-3" title="Permanent link">¶</a></h3>
+<h4 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.9.1</span> Основной сценарий<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.9.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_6" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" от модуля</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.9.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_7" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b4" от модуля</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID_ARGUMENT)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ac-4"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.10</span> AC 4<a class="headerlink" href="#ac-4" title="Permanent link">¶</a></h3>
+<h4 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.10.1</span> Основной сценарий<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" от проекта</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.10.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_8" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b1" от проекта</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.10.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_9" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на отвязку файла с id "d461947f-db57-462e-8c21-67bab18c41b4" от проекта</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID_ARGUMENT)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="us8"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.11</span> US8<a class="headerlink" href="#us8" title="Permanent link">¶</a></h3>
+<h4 id="-100"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.11.1</span> Основной сценарий - в наличии 100 непривязанных файлов<a class="headerlink" href="#-100" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос получение списка непривязанных файлов</td>
+<td>Тестировщик получает ответ с кодом 0 и списком файлов в количестве 100 единиц (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-0"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.1.11.2</span> Нейтральный сценарий - в наличии 0 непривязанных файлов<a class="headerlink" href="#-0" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос получение списка непривязанных файлов</td>
+<td>Тестировщик получает ответ с кодом 0 и списком файлов в количестве 0 единиц (OK)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-r1"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.2</span> Тест-кейсы R1<a class="headerlink" href="#-r1" title="Permanent link">¶</a></h2>
+<h3 id="us7"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.2.1</span> US7<a class="headerlink" href="#us7" title="Permanent link">¶</a></h3>
+<h4 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.2.1.1</span> Основной сценарий<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на удаление файла с id "d461947f-db57-462e-8c21-67bab18c41b4" (состояние файла - MISSING)</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-ftp"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.2.1.2</span> Негативный сценарий - файл в наличии на FTP сервере<a class="headerlink" href="#-ftp" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на удаление файла с id "d461947f-db57-462e-8c21-67bab18c41b4" (состояние файла - PRESENT)</td>
+<td>Тестировщик получает ответ с кодом 1 (CANCELED)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">17.2.1.3</span> Негативный сценарий - файл отсутствует<a class="headerlink" href="#-_10" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на удаление файла с id "d461947f-db57-462e-8c21-67bab18c41b0"</td>
+<td>Тестировщик получает ответ с кодом 3 (INVALID_ARGUMENT)</td>
 </tr>
 </tbody>
 </table>

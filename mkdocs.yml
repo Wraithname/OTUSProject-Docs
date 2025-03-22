@@ -119,9 +119,6 @@ nav:
     - api.md
   - Задачи:
     - ac/DoDDoR.md
-    - tasks/USSCMS.md
-    - tasks/USSDTODB.md
-    - tasks/USSDTA.md
   - Тесты:
     - tests/USSCMS.md
     - tests/USSDTODB.md
@@ -133,3 +130,6 @@ not_in_nav: |
   /tasks/assets/Rus/Seq.md
   /tasks/assets/Sergo/Seq.md
   interviews.md
+  /tasks/USSCMS.md
+  /tasks/USSDTODB.md
+  /tasks/USSDTA.md

@@ -90,10 +90,6 @@ plugins:
       request_timeout: 300
       verify_ssl: false
       verbose: false
-  - kroki:
-      FileTypes:
-        - png
-        - svg
   - enumerate-headings:
       exclude:
         - index.md

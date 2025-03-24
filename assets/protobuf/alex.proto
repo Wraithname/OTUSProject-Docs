@@ -1,0 +1,126 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "ru.inversion.proto";
+option java_outer_classname = "ODBMigration";
+option objc_class_prefix = "ATR";
+
+option java_generate_equals_and_hash = true;
+option optimize_for = LITE_RUNTIME;
+
+package account_transport;
+
+service ODBMigrationService {
+
+  //Списки объектов БД
+  rpc GetObjectsData(ObjectUuidsList) returns (google.protobuf.Empty) {}
+
+  rpc RecalculateAll(RecalculationAllMessage) returns (google.protobuf.Empty) {}
+  rpc RecalculateByModules(RecalculationByModulesMessage) returns (google.protobuf.Empty) {}
+
+  //Project
+  rpc GetProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc AddProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc EditProjectMessage(ProjectMessage) returns (google.protobuf.Empty) {}
+
+  //Module
+  rpc AddModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  rpc EditModuleName(ModuleMessage) returns (google.protobuf.Empty) {}
+
+  //User
+  rpc AddUser(UserMessage) returns (google.protobuf.Empty) {}
+  rpc EditUser(UserMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteUser(UserMessage) returns (google.protobuf.Empty) {}
+  
+  //Link
+  rpc LinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
+  rpc UnLinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
+
+  //DBObject's List
+  rpc GetObjects (ObjectUuidsList)  returns (PreparedRecalculationMessage) {}
+}
+
+message UserMessage {
+  User user = 1;
+}
+
+message ModuleMessage {
+  Module module = 1;
+}
+
+message ProjectMessage {
+  Project project = 1;
+}
+
+message ModulesMessage {
+  repeated Module module = 1;
+}
+
+
+message RecalculationByModulesMessage {
+  string uuid = 1;
+  repeated Module modules = 2;
+}
+
+message RecalculationAllMessage {
+  string uuid = 1;
+}
+
+message PreparedRecalculationMessage {
+  string uuid = 1;
+  uint64 count = 2;
+}
+
+
+message Module {
+  string id = 1;
+  string name = 2;
+}
+
+message Project {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string url_jira = 4;
+}
+
+message ModuleObjects {
+  string project_uuid = 1;
+  Module module = 2;
+  DbObjectsList dbObjectsList = 3;
+}
+
+message ModuleObjectsList{
+  repeated ModuleObjects project_uuid=1;
+}
+
+message ObjectUuid {
+  string uuid = 1;
+}
+
+message ObjectUuidsList {
+  repeated ObjectUuid object_uuid = 1;
+}
+
+message User {
+  uint64 id = 1;
+  string email = 2;
+  string token = 3;
+}
+
+message DbObjectsList {
+  repeated DbObjects dbObjectsList = 1;
+}
+
+message DbObjects {
+  string id = 1;
+  string owner = 2;
+  string type = 3;
+  int64 user = 4;
+  int32 days = 5;
+  string comment = 6;
+}

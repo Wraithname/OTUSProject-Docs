@@ -14,3 +14,7 @@
 - Сбор общей статистики (Получение ответов)
 
 ![](diagrams/include/Oracle2PG_tobe.svg)
+
+```kroki-bpmn
+@from_file:diagrams/include/Oracle2PG_tobe.bpmn
+```

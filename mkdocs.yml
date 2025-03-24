@@ -90,6 +90,9 @@ plugins:
       request_timeout: 300
       verify_ssl: false
       verbose: false
+  - kroki:
+      FileTypes:
+        - bpmn
   - enumerate-headings:
       exclude:
         - index.md

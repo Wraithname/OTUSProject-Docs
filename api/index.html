@@ -566,9 +566,104 @@
 <li>Привязка/отвязка объекта к модулю (Данные от гейта на запись UUID модуля, UUID объекта, тип операции -&gt; Записал)</li>
 <li>Данные по объектам (Данные с другого сервиса "Сервис работы с объектами БД" список объектов БД из таблицы "Объекты БД" -&gt; Записать UUID объектов с типами)</li>
 <li>Запрос данных по проектам/модулям (Запрос от сервиса "Сервис расчёта статистики" -&gt; Отдать изменения по проектам/модулям/привязанным объектам)</li>
-<li>Данные по проектам/модулям/пользователям (Отвправка CRUD данных по таблицам "Проекты", "Модули", "Привязка пользователей к проекту/модулю в сервис "Сервис работы с объектами БД" -&gt; Записал)
-<a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../assets/protobuf/alex.proto"><img alt="" src="../assets/protobuf/alex.proto"/></a></li>
+<li>Данные по проектам/модулям/пользователям (Отвправка CRUD данных по таблицам "Проекты", "Модули", "Привязка пользователей к проекту/модулю в сервис "Сервис работы с объектами БД" -&gt; Записал)</li>
 </ul>
+<p>syntax = "proto3";</p>
+<p>import "google/protobuf/empty.proto";</p>
+<p>option java_multiple_files = true;
+option java_package = "ru.inversion.proto";
+option java_outer_classname = "ODBMigration";
+option objc_class_prefix = "ATR";</p>
+<p>option java_generate_equals_and_hash = true;
+option optimize_for = LITE_RUNTIME;</p>
+<p>package account_transport;</p>
+<p>service ODBMigrationService {</p>
+<p>//Списки объектов БД
+  rpc GetObjectsData(ObjectUuidsList) returns (google.protobuf.Empty) {}</p>
+<p>rpc RecalculateAll(RecalculationAllMessage) returns (google.protobuf.Empty) {}
+  rpc RecalculateByModules(RecalculationByModulesMessage) returns (google.protobuf.Empty) {}</p>
+<p>//Project
+  rpc GetProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc AddProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc EditProjectMessage(ProjectMessage) returns (google.protobuf.Empty) {}</p>
+<p>//Module
+  rpc AddModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  rpc EditModuleName(ModuleMessage) returns (google.protobuf.Empty) {}</p>
+<p>//User
+  rpc AddUser(UserMessage) returns (google.protobuf.Empty) {}
+  rpc EditUser(UserMessage) returns (google.protobuf.Empty) {}
+  rpc DeleteUser(UserMessage) returns (google.protobuf.Empty) {}</p>
+<p>//Link
+  rpc LinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
+  rpc UnLinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}</p>
+<p>//DBObject's List
+  rpc GetObjects (ObjectUuidsList)  returns (PreparedRecalculationMessage) {}
+}</p>
+<p>message UserMessage {
+  User user = 1;
+}</p>
+<p>message ModuleMessage {
+  Module module = 1;
+}</p>
+<p>message ProjectMessage {
+  Project project = 1;
+}</p>
+<p>message ModulesMessage {
+  repeated Module module = 1;
+}</p>
+<p>message RecalculationByModulesMessage {
+  string uuid = 1;
+  repeated Module modules = 2;
+}</p>
+<p>message RecalculationAllMessage {
+  string uuid = 1;
+}</p>
+<p>message PreparedRecalculationMessage {
+  string uuid = 1;
+  uint64 count = 2;
+}</p>
+<p>message Module {
+  string id = 1;
+  string name = 2;
+}</p>
+<p>message Project {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  string url_jira = 4;
+}</p>
+<p>message ModuleObjects {
+  string project_uuid = 1;
+  Module module = 2;
+  DbObjectsList dbObjectsList = 3;
+}</p>
+<p>message ModuleObjectsList{
+  repeated ModuleObjects project_uuid=1;
+}</p>
+<p>message ObjectUuid {
+  string uuid = 1;
+}</p>
+<p>message ObjectUuidsList {
+  repeated ObjectUuid object_uuid = 1;
+}</p>
+<p>message User {
+  uint64 id = 1;
+  string email = 2;
+  string token = 3;
+}</p>
+<p>message DbObjectsList {
+  repeated DbObjects dbObjectsList = 1;
+}</p>
+<p>message DbObjects {
+  string id = 1;
+  string owner = 2;
+  string type = 3;
+  int64 user = 4;
+  int32 days = 5;
+  string comment = 6;
+}</p>
 <h3 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.2.2</span> Сервис расчёта статистики<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
 <ul>
 <li>Данные по проектам/модулям (Ответ на "Запрос данных по проектам/модулям" от "Сервис списка проектов модулей и привязанных пользователей")</li>

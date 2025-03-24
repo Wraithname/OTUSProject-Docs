@@ -13,4 +13,4 @@
 - Сбор статистики по клиентской части
 - Сбор общей статистики (Получение ответов)
 
-![](diagrams/include/Oracle2PG_tobe.bpmn)
+![](diagrams/include/Oracle2PG_tobe.svg)

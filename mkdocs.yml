@@ -92,7 +92,8 @@ plugins:
       verbose: false
   - kroki:
       FileTypes:
-        - bpmn
+        - png
+        - svg
   - enumerate-headings:
       exclude:
         - index.md

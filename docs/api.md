@@ -16,6 +16,7 @@
 <table>
 <tr>
    <td>
+   <pre>
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
@@ -165,6 +166,7 @@ message Calculate_Response{
     string description=2;
     date exec_date=3;
 }
+</pre>
    </td>
   </tr>
 </table>

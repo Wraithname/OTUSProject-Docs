@@ -547,13 +547,6 @@
 <h1 id="api-grpc"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.</span> API приложений через gRPC<a class="headerlink" href="#api-grpc" title="Permanent link">¶</a></h1>
 <h2 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.1</span> Сервис расчёта статистики<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <h3 id="calculation-service"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.1.1</span> Calculation Service<a class="headerlink" href="#calculation-service" title="Permanent link">¶</a></h3>
-<ul>
-<li>CRUD проекта/модуля (Данные по таблицам "Проекты" и "Модули"-&gt; Записал)</li>
-<li>Запрос перерасчёта по модулям (Передаётся UUID модулей списком-&gt; Ожидай данные расчёта в раббите)</li>
-<li>Запрос полного перерасчёта (Тыркнуть процесс расчёта по всем -&gt; Ожидай данные расчёта в раббите)</li>
-<li>Запрос/получение списков проектов/модулей (?)</li>
-<li>Запрос формирования отчёта (Данные по расчётам -&gt; Отчёт)</li>
-</ul>
 <h3 id="report-service"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.1.2</span> Report Service<a class="headerlink" href="#report-service" title="Permanent link">¶</a></h3>
 <ul>
 <li>REST JIRA</li>
@@ -561,123 +554,163 @@
 </ul>
 <h2 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.2</span> Сервис данных по миграции объекто БД<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <h3 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.2.1</span> Сервис списка проектов модулей и привязанных пользователей<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<ul>
-<li>CRUD проекта/модуля/пользователей (Данные от гейта по CRUD данных по таблицам "Проекты", "Модули", "Привязка пользователей к проекту/модулю -&gt; Записал)</li>
-<li>Привязка/отвязка объекта к модулю (Данные от гейта на запись UUID модуля, UUID объекта, тип операции -&gt; Записал)</li>
-<li>Данные по объектам (Данные с другого сервиса "Сервис работы с объектами БД" список объектов БД из таблицы "Объекты БД" -&gt; Записать UUID объектов с типами)</li>
-<li>Запрос данных по проектам/модулям (Запрос от сервиса "Сервис расчёта статистики" -&gt; Отдать изменения по проектам/модулям/привязанным объектам)</li>
-<li>Данные по проектам/модулям/пользователям (Отвправка CRUD данных по таблицам "Проекты", "Модули", "Привязка пользователей к проекту/модулю в сервис "Сервис работы с объектами БД" -&gt; Записал)</li>
-</ul>
-<p>syntax = "proto3";</p>
-<p>import "google/protobuf/empty.proto";</p>
-<p>option java_multiple_files = true;
+<table>
+<tr>
+<td>
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
 option java_package = "ru.inversion.proto";
 option java_outer_classname = "ODBMigration";
-option objc_class_prefix = "ATR";</p>
-<p>option java_generate_equals_and_hash = true;
-option optimize_for = LITE_RUNTIME;</p>
-<p>package account_transport;</p>
-<p>service ODBMigrationService {</p>
-<p>//Списки объектов БД
-  rpc GetObjectsData(ObjectUuidsList) returns (google.protobuf.Empty) {}</p>
-<p>rpc RecalculateAll(RecalculationAllMessage) returns (google.protobuf.Empty) {}
-  rpc RecalculateByModules(RecalculationByModulesMessage) returns (google.protobuf.Empty) {}</p>
-<p>//Project
-  rpc GetProject(ProjectMessage) returns (google.protobuf.Empty) {}
-  rpc AddProject(ProjectMessage) returns (google.protobuf.Empty) {}
-  rpc DeleteProject(ProjectMessage) returns (google.protobuf.Empty) {}
-  rpc EditProjectMessage(ProjectMessage) returns (google.protobuf.Empty) {}</p>
-<p>//Module
-  rpc AddModule(ModuleMessage) returns (google.protobuf.Empty) {}
-  rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
-  rpc EditModuleName(ModuleMessage) returns (google.protobuf.Empty) {}</p>
-<p>//User
-  rpc AddUser(UserMessage) returns (google.protobuf.Empty) {}
-  rpc EditUser(UserMessage) returns (google.protobuf.Empty) {}
-  rpc DeleteUser(UserMessage) returns (google.protobuf.Empty) {}</p>
-<p>//Link
-  rpc LinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
-  rpc UnLinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}</p>
-<p>//DBObject's List
-  rpc GetObjects (ObjectUuidsList)  returns (PreparedRecalculationMessage) {}
-}</p>
-<p>message UserMessage {
-  User user = 1;
-}</p>
-<p>message ModuleMessage {
-  Module module = 1;
-}</p>
-<p>message ProjectMessage {
-  Project project = 1;
-}</p>
-<p>message ModulesMessage {
-  repeated Module module = 1;
-}</p>
-<p>message RecalculationByModulesMessage {
-  string uuid = 1;
-  repeated Module modules = 2;
-}</p>
-<p>message RecalculationAllMessage {
-  string uuid = 1;
-}</p>
-<p>message PreparedRecalculationMessage {
-  string uuid = 1;
-  uint64 count = 2;
-}</p>
-<p>message Module {
-  string id = 1;
-  string name = 2;
-}</p>
-<p>message Project {
-  string id = 1;
-  string name = 2;
-  string description = 3;
-  string url_jira = 4;
-}</p>
-<p>message ModuleObjects {
-  string project_uuid = 1;
-  Module module = 2;
-  DbObjectsList dbObjectsList = 3;
-}</p>
-<p>message ModuleObjectsList{
-  repeated ModuleObjects project_uuid=1;
-}</p>
-<p>message ObjectUuid {
-  string uuid = 1;
-}</p>
-<p>message ObjectUuidsList {
-  repeated ObjectUuid object_uuid = 1;
-}</p>
-<p>message User {
-  uint64 id = 1;
-  string email = 2;
-  string token = 3;
-}</p>
-<p>message DbObjectsList {
-  repeated DbObjects dbObjectsList = 1;
-}</p>
-<p>message DbObjects {
-  string id = 1;
-  string owner = 2;
-  string type = 3;
-  int64 user = 4;
-  int32 days = 5;
-  string comment = 6;
-}</p>
+option objc_class_prefix = "ATR";
+
+option java_generate_equals_and_hash = true;
+option optimize_for = LITE_RUNTIME;
+
+package account_transport;
+
+service ODBMigrationService {
+
+//Projects (Сервис 2)
+rpc GetProjects(google.protobuf.Empty) returns (stream Project) {}
+//Projects (Сервис 1)
+rpc AddProjects(stream Project) returns (Response) {}
+rpc UpdateProjects(stream Project) returns (Response) {}
+rpc DeleteProjects(stream Project) returns (Response) {}
+
+//Modules (Сервис 2)
+rpc GetModules(google.protobuf.Empty) returns (stream Module) {}
+//Modules (Сервис 1)
+rpc AddModule(stream Module) returns (Response) {}
+rpc UpdateModules(stream Module) returns (Response) {}
+rpc DeleteModules(stream Module) returns (Response) {}
+
+//Users (Сервис 1)
+rpc AddUsers(stream User) returns (Response) {}
+rpc UpdateUsers(stream User) returns (Response) {}
+rpc DeleteUsers(stream User) returns (Response) {}
+
+//Users_link (Сервис 1)
+rpc AddLinkDBOWithUser(stream Project_User_Con) returns (Response) {}
+rpc DeleteLinkDBOWithUser(stream Project_User_Con) returns (Response) {}
+
+//Link (Сервис 1)
+rpc AddLinkModule(DB_Object_Module_link) returns (Response) {}
+rpc DeleteLinkModule(DB_Object_Module_link) returns (Response) {}
+
+//Calculations (Сервис 2)
+rpc CalculateAll(google.protobuf.Empty) returns (Calculate_Response) {}
+rpc CalculateModules(stream DB_Object_Module_link) returns (Calculate_Response) {}
+
+//DB_Objects (Сервис 3)
+rpc getDBObjects(google.protobuf.Empty) returns (DB_ObjectList_Response_on_Calculation) {}
+rpc MigrateTable(DB_Object) returns (Response) {}
+}
+
+message Project {
+    string project_uuid=1;
+    string project_name=2;
+    string project_description=3;
+    string project_jira_url=4;
+}
+
+message Module {
+    string module_uuid=1;
+    string module_name=2;
+    string module_description=3;
+    string project_uuid=4;
+}
+
+message User {
+    uint64 user_id=1;
+    string user_email=2;
+    string user_token=3;
+    string user_position=4;
+}
+
+message Project_User_Con{
+    User user_id=1;
+    Module module_uuid=2;
+    Project project_uuid=3;
+}
+
+message DB_Object{
+    string dbo_uuid=1;
+    string dbo_owner=2;
+    string dbo_type=3;
+    string dbo_user=4;
+    string dbo_days=5;
+    string dbo_comment=6;
+}
+
+message Migration_Status{
+    uint64 status_id=1;
+    string status_name=2;
+}
+
+message DB_Object_Module_link{
+    DB_Object object=1;
+    Module module=2;
+}
+
+message DB_Object_Hist{
+    uint64 id=1;
+    DB_Objects dbo_uuid=2;
+    date exec_date=3;
+    string version=4;
+    DB_Object_Hist_Type type_id=5;
+    User user_id=6;
+    Migration_Status st_id=7;
+    uint64 dbo_percent=8;
+}
+
+message DB_Object_Hist_Type{
+    uint64 id=1;
+    string name=2;
+}
+
+message Jira_Task{
+    string task_id=1;
+    string task_status=2;
+    date task_date_create=3;
+    DB_Objects object_uuid=4;
+    Project project_uuid=5;
+    string task_time_pass=6;
+}
+
+message Response{
+    uint64 code=1;
+    string description=2;
+}
+
+message DB_ObjectList_Response{
+    uint64 code=1;
+    string description=2;
+    date exec_date=3;
+    uint64 object_count=4;
+}
+
+message DB_ObjectList_Response_on_Calculation{
+    uint64 code=1;
+    string description=2;
+    DB_Object object=3;
+    DB_Object_Hist last_hist=4;
+    Jira_Task time_pass=5;
+    date last_date_exec=6;
+}
+
+message Calculate_Response{
+    uint64 code=1;
+    string description=2;
+    date exec_date=3;
+}
+   </td>
+</tr>
+</table>
 <h3 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.2.2</span> Сервис расчёта статистики<a class="headerlink" href="#_4" title="Permanent link">¶</a></h3>
-<ul>
-<li>Данные по проектам/модулям (Ответ на "Запрос данных по проектам/модулям" от "Сервис списка проектов модулей и привязанных пользователей")</li>
-<li>Запрос перерасчёта (Запрос от гейта -&gt; Ожидай данные расчёта в раббите) [Взимодейтсвие с Серегой]</li>
-<li>Запрос перерасчёта по модулям (Передаётся UUID модулей списком-&gt; Ожидай данные расчёта в раббите) [Взимодейтсвие с Серегой]</li>
-<li>Запрос данных по объектам (Опросить "Сервис работы с объектами БД" по изменениям в объектах)</li>
-</ul>
 <h3 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.2.3</span> Сервис работы с объектами БД<a class="headerlink" href="#_5" title="Permanent link">¶</a></h3>
-<ul>
-<li>Данные по объектам (Ответ на "Запрос данных по объектам" от "Сервис расчёта статистики" -&gt; Данные по объектам)</li>
-<li>Запрос списков объектов БД (Запрос от гейта -&gt; Ожидай данные расчёта в раббите)</li>
-<li>Запрос на миграцию таблицы (UUID объекта по типу таблица-&gt; Выполнено)</li>
-<li>Запрос на создание задачи в JIRA (Запрос от гейта -&gt; Задача на миграцию с JIRA)</li>
-</ul>
 <h2 id="jar"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.3</span> Сервис данных по процессу миграци JAR<a class="headerlink" href="#jar" title="Permanent link">¶</a></h2>
 <h3 id="artifact-info-service"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.3.1</span> Artifact info Service<a class="headerlink" href="#artifact-info-service" title="Permanent link">¶</a></h3>
 <h3 id="calculation-service_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">10.3.2</span> Calculation Service<a class="headerlink" href="#calculation-service_1" title="Permanent link">¶</a></h3>

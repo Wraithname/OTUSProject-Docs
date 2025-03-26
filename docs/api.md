@@ -11,7 +11,7 @@
 
 ## Сервис данных по миграции объекто БД
 
-<table>
+<table style="background-color:grey;">
 <tr>
    <td>
    <pre>

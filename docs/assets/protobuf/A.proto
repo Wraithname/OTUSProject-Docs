@@ -1,21 +1,3 @@
-# API приложений через gRPC
-
-## Сервис расчёта статистики
-
-### Calculation Service
-
-
-### Report Service
- - REST JIRA
- - REST Mail
-
-## Сервис данных по миграции объекто БД
-
-### Сервис списка проектов модулей и привязанных пользователей
-
-<table>
-<tr>
-   <td>
 syntax = "proto3";
 
 import "google/protobuf/empty.proto";
@@ -165,18 +147,3 @@ message Calculate_Response{
     string description=2;
     date exec_date=3;
 }
-   </td>
-  </tr>
-</table>
-
-### Сервис расчёта статистики
-
-
-### Сервис работы с объектами БД
-
-
-## Сервис данных по процессу миграци JAR
-
-### Artifact info Service
-
-### Calculation Service

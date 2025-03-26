@@ -15,23 +15,25 @@ package account_transport;
 service ODBMigrationService {
 
   //Списки объектов БД
-  rpc GetObjectsData(ObjectUuidsList) returns (google.protobuf.Empty) {}
+  rpc GetObjectsData(google.protobuf.Empty) returns (ObjectUuidsList) {}
 
-  rpc RecalculateAll(RecalculationAllMessage) returns (google.protobuf.Empty) {}
-  rpc RecalculateByModules(RecalculationByModulesMessage) returns (google.protobuf.Empty) {}
+  rpc RecalculateAll(google.protobuf.Empty) returns (RecalculationAllMessage) {}
+  rpc RecalculateByModules(google.protobuf.Empty) returns (RecalculationByModulesMessage) {}
 
   //Project
-  rpc GetProject(ProjectMessage) returns (google.protobuf.Empty) {}
+  rpc GetProject(google.protobuf.Empty) returns (ProjectMessageList) {}
   rpc AddProject(ProjectMessage) returns (google.protobuf.Empty) {}
   rpc DeleteProject(ProjectMessage) returns (google.protobuf.Empty) {}
   rpc EditProjectMessage(ProjectMessage) returns (google.protobuf.Empty) {}
 
   //Module
+  rpc GetModule(google.protobuf.Empty) returns (ModulesMessage) {}
   rpc AddModule(ModuleMessage) returns (google.protobuf.Empty) {}
   rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
   rpc EditModuleName(ModuleMessage) returns (google.protobuf.Empty) {}
 
   //User
+  rpc GetUser(google.protobuf.Empty) returns (UserMessage) {}
   rpc AddUser(UserMessage) returns (google.protobuf.Empty) {}
   rpc EditUser(UserMessage) returns (google.protobuf.Empty) {}
   rpc DeleteUser(UserMessage) returns (google.protobuf.Empty) {}
@@ -39,6 +41,8 @@ service ODBMigrationService {
   //Link
   rpc LinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
   rpc UnLinkObjects(ModuleObjects) returns (google.protobuf.Empty) {}
+  rpc LinkUser(LinkUserWithProject) returns (google.protobuf.Empty) {}
+  rpc UnlinkUser(UnlinkUserWithProject) returns (google.protobuf.Empty) {}
 
   //DBObject's List
   rpc GetObjects (ObjectUuidsList)  returns (PreparedRecalculationMessage) {}
@@ -54,6 +58,10 @@ message ModuleMessage {
 
 message ProjectMessage {
   Project project = 1;
+}
+
+message ProjectMessageList{
+  repeated Project id=1;
 }
 
 message ModulesMessage {
@@ -75,6 +83,15 @@ message PreparedRecalculationMessage {
   uint64 count = 2;
 }
 
+message LinkUserWithProject{
+  User user=1;
+  Project project_uuid=2;
+}
+
+message UnlinkUserWithProject{
+  User user=1;
+  Project project_uuid=2;
+}
 
 message Module {
   string id = 1;

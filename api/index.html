@@ -548,38 +548,29 @@ package account_transport;
 
 service ODBMigrationService {
 
-//Projects (Сервис 2)
 rpc GetProjects(google.protobuf.Empty) returns (stream Project) {}
-//Projects (Сервис 1)
 rpc AddProjects(stream Project) returns (Response) {}
 rpc UpdateProjects(stream Project) returns (Response) {}
 rpc DeleteProjects(stream Project) returns (Response) {}
 
-//Modules (Сервис 2)
 rpc GetModules(google.protobuf.Empty) returns (stream Module) {}
-//Modules (Сервис 1)
 rpc AddModule(stream Module) returns (Response) {}
 rpc UpdateModules(stream Module) returns (Response) {}
 rpc DeleteModules(stream Module) returns (Response) {}
 
-//Users (Сервис 1)
 rpc AddUsers(stream User) returns (Response) {}
 rpc UpdateUsers(stream User) returns (Response) {}
 rpc DeleteUsers(stream User) returns (Response) {}
 
-//Users_link (Сервис 1)
 rpc AddLinkDBOWithUser(stream Project_User_Con) returns (Response) {}
 rpc DeleteLinkDBOWithUser(stream Project_User_Con) returns (Response) {}
 
-//Link (Сервис 1)
 rpc AddLinkModule(DB_Object_Module_link) returns (Response) {}
 rpc DeleteLinkModule(DB_Object_Module_link) returns (Response) {}
 
-//Calculations (Сервис 2)
 rpc CalculateAll(google.protobuf.Empty) returns (Calculate_Response) {}
 rpc CalculateModules(stream DB_Object_Module_link) returns (Calculate_Response) {}
 
-//DB_Objects (Сервис 3)
 rpc getDBObjects(google.protobuf.Empty) returns (DB_ObjectList_Response_on_Calculation) {}
 rpc MigrateTable(DB_Object) returns (Response) {}
 }

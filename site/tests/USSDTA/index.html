@@ -480,7 +480,28 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#us-4-">
 <span class="md-ellipsis">
-      US 4 - в разработке (под вопросом)
+      US 4 - в разработке
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac1-">
+<span class="md-ellipsis">
+      AC1 - Создание модуля
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac2-">
+<span class="md-ellipsis">
+      AC2 - Удаление модуля
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ac3-">
+<span class="md-ellipsis">
+      AC3 - Редактирование модуля
     </span>
 </a>
 </li>
@@ -699,10 +720,132 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us-4-"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.4</span> US 4 - в разработке (под вопросом)<a class="headerlink" href="#us-4-" title="Permanent link">¶</a></h3>
-<h3 id="us-5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.5</span> US 5<a class="headerlink" href="#us-5" title="Permanent link">¶</a></h3>
-<h3 id="ac-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6</span> AC 1<a class="headerlink" href="#ac-1" title="Permanent link">¶</a></h3>
-<h4 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6.1</span> Основной сценарий<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<h3 id="us-4-"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.4</span> US 4 - в разработке<a class="headerlink" href="#us-4-" title="Permanent link">¶</a></h3>
+<h3 id="ac1-"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.5</span> AC1 - Создание модуля<a class="headerlink" href="#ac1-" title="Permanent link">¶</a></h3>
+<h4 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.5.1</span> Основной сценарий<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на добавление модуля с id "d461947f-db57-462e-8c21-67bab18c41b1", project_uuid "6ef0c579-299b-4c46-b7d7-55eb9760a6f4" и наименованием модуля "Тест"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-id"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.5.2</span> Негативный сценарий - модуль с указанным id уже существует<a class="headerlink" href="#-id" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на добавление модуля с id "d461947f-db57-462e-8c21-67bab18c41b2", project_uuid "6ef0c579-299b-4c46-b7d7-55eb9760a6f4" и наименованием модуля "Тест"</td>
+<td>Тестировщик получает ответ с кодом 6 (ALREADY_EXISTS)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.5.3</span> Негативный сценарий - указанного проекта не существует<a class="headerlink" href="#-_4" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на добавление модуля с id "d461947f-db57-462e-8c21-67bab18c41b1", project_uuid "6ef0c579-299b-4c46-b7d7-55eb9760a6f6" и наименованием модуля "Тест"</td>
+<td>Тестировщик получает ответ с кодом 5 (NOT_FOUND)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ac2-"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6</span> AC2 - Удаление модуля<a class="headerlink" href="#ac2-" title="Permanent link">¶</a></h3>
+<h4 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6.1</span> Основной сценарий<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на удаление модуля с id "d461947f-db57-462e-8c21-67bab18c41b2"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6.2</span> Негативный сценарий - указанного модуля не существует<a class="headerlink" href="#-_5" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на удаление модуля с id "d461947f-db57-462e-8c21-67bab18c41b1"</td>
+<td>Тестировщик получает ответ с кодом 5 (NOT_FOUND)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ac3-"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.7</span> AC3 - Редактирование модуля<a class="headerlink" href="#ac3-" title="Permanent link">¶</a></h3>
+<h4 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.7.1</span> Основной сценарий<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на редактирование модуля с id "d461947f-db57-462e-8c21-67bab18c41b2" и новым наименованием "Тест2"</td>
+<td>Тестировщик получает ответ с кодом 0 (OK)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.7.2</span> Негативный сценарий - указанного модуля не существует<a class="headerlink" href="#-_6" title="Permanent link">¶</a></h4>
+<table>
+<thead>
+<tr>
+<th>Шаг</th>
+<th>Описание шага</th>
+<th>Результат</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Тестировщик отправляет запрос на редактирование модуля с id "d461947f-db57-462e-8c21-67bab18c41b1" и новым наименованием "Тест2"</td>
+<td>Тестировщик получает ответ с кодом 5 (NOT_FOUND)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="us-5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.8</span> US 5<a class="headerlink" href="#us-5" title="Permanent link">¶</a></h3>
+<h3 id="ac-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9</span> AC 1<a class="headerlink" href="#ac-1" title="Permanent link">¶</a></h3>
+<h4 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.1</span> Основной сценарий<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -719,7 +862,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6.2</span> Негативный сценарий - несуществующий модуль (под вопросом)<a class="headerlink" href="#-_4" title="Permanent link">¶</a></h4>
+<h4 id="-_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.2</span> Негативный сценарий - несуществующий модуль<a class="headerlink" href="#-_7" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -736,7 +879,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.6.3</span> Негативный сценарий - несуществующий файл<a class="headerlink" href="#-_5" title="Permanent link">¶</a></h4>
+<h4 id="-_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.3</span> Негативный сценарий - несуществующий файл<a class="headerlink" href="#-_8" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -753,8 +896,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac-2"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.7</span> AC 2<a class="headerlink" href="#ac-2" title="Permanent link">¶</a></h3>
-<h4 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.7.1</span> Основной сценарий<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<h3 id="ac-2"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.10</span> AC 2<a class="headerlink" href="#ac-2" title="Permanent link">¶</a></h3>
+<h4 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.10.1</span> Основной сценарий<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -771,8 +914,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac-3"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.8</span> AC 3<a class="headerlink" href="#ac-3" title="Permanent link">¶</a></h3>
-<h4 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.8.1</span> Основной сценарий<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<h3 id="ac-3"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.11</span> AC 3<a class="headerlink" href="#ac-3" title="Permanent link">¶</a></h3>
+<h4 id="_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.11.1</span> Основной сценарий<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -789,7 +932,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.8.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_6" title="Permanent link">¶</a></h4>
+<h4 id="-_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.11.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_9" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -806,7 +949,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.8.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_7" title="Permanent link">¶</a></h4>
+<h4 id="-_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.11.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_10" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -823,8 +966,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac-4"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9</span> AC 4<a class="headerlink" href="#ac-4" title="Permanent link">¶</a></h3>
-<h4 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.1</span> Основной сценарий<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<h3 id="ac-4"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.12</span> AC 4<a class="headerlink" href="#ac-4" title="Permanent link">¶</a></h3>
+<h4 id="_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.12.1</span> Основной сценарий<a class="headerlink" href="#_11" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -841,7 +984,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_8" title="Permanent link">¶</a></h4>
+<h4 id="-_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.12.2</span> Нейтральный сценарий - файл не привязан<a class="headerlink" href="#-_11" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -858,7 +1001,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.9.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_9" title="Permanent link">¶</a></h4>
+<h4 id="-_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.12.3</span> Негативный сценарий - файла не существует<a class="headerlink" href="#-_12" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -875,8 +1018,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.10</span> US7<a class="headerlink" href="#us7" title="Permanent link">¶</a></h3>
-<h4 id="-100"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.10.1</span> Основной сценарий - в наличии 100 непривязанных файлов<a class="headerlink" href="#-100" title="Permanent link">¶</a></h4>
+<h3 id="us7"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.13</span> US7<a class="headerlink" href="#us7" title="Permanent link">¶</a></h3>
+<h4 id="-100"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.13.1</span> Основной сценарий - в наличии 100 непривязанных файлов<a class="headerlink" href="#-100" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -893,7 +1036,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-0"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.10.2</span> Нейтральный сценарий - в наличии 0 непривязанных файлов<a class="headerlink" href="#-0" title="Permanent link">¶</a></h4>
+<h4 id="-0"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.1.13.2</span> Нейтральный сценарий - в наличии 0 непривязанных файлов<a class="headerlink" href="#-0" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -912,7 +1055,7 @@
 </table>
 <h2 id="-r1"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2</span> Тест-кейсы R1<a class="headerlink" href="#-r1" title="Permanent link">¶</a></h2>
 <h3 id="us6"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2.1</span> US6<a class="headerlink" href="#us6" title="Permanent link">¶</a></h3>
-<h4 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2.1.1</span> Основной сценарий<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<h4 id="_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2.1.1</span> Основной сценарий<a class="headerlink" href="#_12" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -946,7 +1089,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2.1.3</span> Негативный сценарий - файл отсутствует<a class="headerlink" href="#-_10" title="Permanent link">¶</a></h4>
+<h4 id="-_13"><span class="enumerate-headings-plugin enumerate-heading-plugin">14.2.1.3</span> Негативный сценарий - файл отсутствует<a class="headerlink" href="#-_13" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>

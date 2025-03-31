@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="../../api/" rel="prev"/>
-<link href="../../tasks/USSCMS/" rel="next"/>
+<link href="../../tests/USSCMS/" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.5" name="generator"/>
 <title>Definition of Ready &amp; Definition of Done - Система автоматического контроля, сбора, классификации и предоставления статистики по процессу миграции ЦАБС</title>
@@ -363,7 +363,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../api/">
 <span class="md-ellipsis">
-    API приложения через gRPC
+    API приложений через gRPC
     
   </span>
 </a>
@@ -388,36 +388,34 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Definition of Ready &amp; Definition of Done
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     Definition of Ready &amp; Definition of Done
     
   </span>
 </a>
-</li>
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/USSCMS/">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-    Задачи по разработке сервиса расчёта статистики миграции
-    
-  </span>
+      Задачи на разработку
+    </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/USSDTODB/">
-<span class="md-ellipsis">
-    Задачи по разработке сервиса получения данных по процессу миграции объектов БД |
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../tasks/USSDTA/">
-<span class="md-ellipsis">
-    Задачи по разработке сервиса получения данных по процессу миграции Jar
-    
-  </span>
-</a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -440,7 +438,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../tests/USSCMS/">
 <span class="md-ellipsis">
-    Тест-кейсы
+    Cервис расчёта статистики миграции
     
   </span>
 </a>
@@ -448,7 +446,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../tests/USSDTODB/">
 <span class="md-ellipsis">
-    Создание задачи на миграцию объекта
+    Cервис получения данных по процессу миграции объектов БД
     
   </span>
 </a>
@@ -456,7 +454,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../tests/USSDTA/">
 <span class="md-ellipsis">
-    Просмотр ответственных за проект и модуль
+    Cервис получения данных по процессу миграции JAR
     
   </span>
 </a>
@@ -474,6 +472,1899 @@
 <h1 id="definition-of-ready-definition-of-done"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.</span> Definition of Ready &amp; Definition of Done<a class="headerlink" href="#definition-of-ready-definition-of-done" title="Permanent link">¶</a></h1>
 <p>Definition of Ready &amp; Definition of Done для команды</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../DoR.svg"><img alt="" src="../DoR.svg"/></a></p>
+<h2 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">11.1</span> Задачи на разработку<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-001</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм взаимодействия с проектами</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения и хранения проектов</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Сформировать скрипт создания таблицы для хранения информации и настройки проектов.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../model/#модель-данных-сервиса-расчёта-статистики-по-процессу-миграции">Таблица PROJECT</a> <br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd5">SEQ5-Получение списка проектов</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus01">USSCMS-ACUS01</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицей project</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-002</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм получения информации по проектам из jira</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения актуальной информации по проектам из jira</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Реализовать контроллер для получения списка зарегистрированных проектов в jira</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd5">SEQ5-Получение списка проектов</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus01">USSCMS-ACUS01</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернут сервис для получения списка проектов из jira</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-003</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизма просмотра списков проектов</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация формы просмотра списка проектов и их настроек</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать web форму просмотра списка проектов системы. <br/> 2.Реализовать web форму настройки проектов</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf3">Макет экранной формы "Проекты"</a> <br/><a href="../../uiux/#wf4">Макет экранной формы "Настройка проектов"</a> <br/><a href="../../uiux/#wf5">Макет экранной формы "Привязка модулей к проекту"</a> <br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd4">SEQ4-Получение списка модулей</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus01">USSCMS-ACUS01</a> <br/> <a href="../AC/#ussdtodb-acus01">USSDTODB-ACUS01</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернуто web приложение с формами просмотра списка проектов и настроек проектов</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-004</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм настройки проектов</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма настройки проектов системы</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты для создания таблиц: USER, PROJECT_USER_CON, USER_GROUP_CON, USER,FUNC_GROUP.<br/> 2. Реализовать механизм установки ответственного лица за процесс миграции проекта.<br/> 3. Реализовать механизм привязки модулей к проекту.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../model/#модель-данных-сервиса-расчёта-статистики-по-процессу-миграции">Таблицы USER, PROJECT_USER_CON, USER_GROUP_CON, USER,FUNC_GROUP</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus01">USSCMS-ACUS01</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернут сервис настройки проектов системы</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-005</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм взаимодействия с модулями</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма создания, хранения и настройки модулей</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Сформировать скрипт создания таблицы для хранения информации и настройки модулей.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-001</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../model/#модель-данных-сервиса-расчёта-статистики-по-процессу-миграции">Таблица MODULES</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd1">SEQ1-Создание модуля</a> <br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd4">SEQ4-Получение списка модулей</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus02">USSCMS-ACUS02</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицей modules</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-006</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизма просмотра списка модулей</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация формы просмотра списка модулей и их настроек</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать web форму просмотра списка модулей системы. <br/> 2.Реализовать web форму настройки модулей</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-005</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf6">Макет экранной формы "Модули"</a> <br/><a href="../../uiux/#wf7">Макет экранной формы "Настройка модуля"</a> <br/><a href="../../uiux/#wf8">Макет экранной формы "Привязка объектов и артефактов к модулю"</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd4">SEQ4-Получение списка модулей</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus02">USSCMS-ACUS02</a> <br/> <a href="../AC/#ussdtodb-acus01">USSDTODB-ACUS01</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернуто web приложение с формами просмотра списка модулей и настроек модулей</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-007</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм настройки модулей</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма настройки модулей системы</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты для создания таблиц: DB_OBJECTS, DB_OBJECTS_MODULES_FUNCPART_CON, FUNC_PART, ARTEFACT_MODULES_CON, ARTIFACTS_ELEMENTS.<br/> 2. Реализовать механизм установки ответственного лица за процесс миграции модуля.<br/> 3. Реализовать механизм привязки объектов базы данных к модулю.<br/> 4. Реализовать механизм привязки артефактов к модулю</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-005</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../model/#модель-данных-сервиса-расчёта-статистики-по-процессу-миграции">Таблицы DB_OBJECTS, DB_OBJECTS_MODULES_FUNCPART_CON, FUNC_PART, ARTEFACT_MODULES_CON, ARTIFACTS_ELEMENTS</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus02">USSCMS-ACUS02</a><br/> <a href="../AC/#usscms-acus05">USSCMS-ACUS05</a> <br/> <a href="../AC/#usscms-acus06">USSCMS-ACUS06</a> <br/><a href="../AC/#usscms-acus07">USSCMS-ACUS07</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута база данных с таблицами: DB_OBJECTS, DB_OBJECTS_MODULES_FUNCPART_CON, FUNC_PART, ARTEFACT_MODULES_CON, ARTIFACTS_ELEMENTS.<br/> 2. Развернут сервис настройки модулей системы.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-008</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм настройки объектов базы данных</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма настройки объектов базы данных</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать форму настройки объектов базы данных.<br/> 2. Реализовать механизм получения списка объектов базы данных из сервиса получения данных по процессу миграции объектов базы данных.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-005</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf9">Макет экранной формы "Объекты базы данных"</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd8">SEQ8-Обновление структуры объектов БД</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus08">USSCMS-ACUS08</a><br/> <a href="../AC/#usscms-acus12">USSCMS-ACUS12</a> <br/> <a href="../AC/#ussdtodb-acus02">USSDTODB-ACUS02</a> <br/> <a href="../AC/#ussdtodb-acus03">USSDTODB-ACUS03</a> <br/> <a href="../AC/#ussdtodb-acus04">USSDTODB-ACUS04</a> <br/> <a href="../AC/#ussdtodb-acus05">USSDTODB-ACUS05</a> <br/> <a href="../AC/#ussdtodb-acus09">USSDTODB-ACUS09</a> <br/> <a href="../AC/#ussdtodb-acus10">USSDTODB-ACUS10</a> <br/> <a href="../AC/#ussdtodb-acus12">USSDTODB-ACUS12</a> <br/> <a href="../AC/#ussdtodb-acus13">USSDTODB-ACUS13</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута web форма настройки объектов базы данных.<br/> 2. Развернут сервис получения списка объектов базы данных</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-009</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм регистрации заявки на миграцию объекта базы данных</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма регистрации заявки на миграцию объекта базы данных в jira</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать форму создания задачи на миграцию объекта базы данных.<br/> 2. Реализовать механизм регистрации заявки на миграцию объекта базы данных в jira.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-008</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf10">Макет экранной формы "Регастрация задачи на миграцию"</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd2">SEQ2-Создание задачи на миграцию объектов БД</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdtodb-acus06">USSDTODB-ACUS06</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута web форма создания задачи на миграцию объекта базы данных.<br/> 2. Развернут сервис регистрации заявки на миграцию объекта базы данных в jira.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-010</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм получения данных по процессу миграции объектов базы данных</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения данных по процессу миграции объектов базы данных</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать механизм отправки запроса на запуск сбора данных по объектам базы данных.<br/> 2. Реализовать механизм получения данных из сервиса получения данных по процессу миграции объектов базы данных.<br/> 3. Реализовать механизм расчёта статистики по процессу миграции объектов базы данных</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-009</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернут сервис отправки запроса и расчета статистики на основе полученных данных из сервиса получения данных по процессу миграции объектов базы.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-011</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм настройки артефактов</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма настройки модулей системы</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать форму настройки артефактов.<br/> 2. Реализовать механизм получения списка артефактов из сервиса получения данных по процессу миграции jar.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-010</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf11">Макет экранной формы "Артефакты"</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd9">SEQ9-Обновление структуры артефактов</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdta-acus04">USSDTA-ACUS04</a> <br/> <a href="../AC/#ussdta-acus06">USSDTA-ACUS06</a> <br/> <a href="../AC/#ussdta-acus07">USSDTA-ACUS07</a> <br/> <a href="../AC/#ussdta-acus08">USSDTA-ACUS08</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута web форма настройки артефактов.<br/> 2. Развернут сервис получения списка артефактов</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-012</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм регистрации заявки на миграцию артефакта</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма регистрации заявки на миграцию артефакта в jira</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать форму создания задачи на миграцию артефакта.<br/> 2. Реализовать механизм регистрации заявки на миграцию артефакта в jira.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-011</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf12">Макет экранной формы "Регистрация задачи на миграцию"</a> <br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd3">SEQ3-Создание задачи на миграцию артефактов</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута web форма создания задачи на миграцию артефакта.<br/> 2. Развернут сервис регистрации заявки на миграцию артефакта в jira.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-013</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм получения данных по процессу миграции артефактов</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения данных по процессу миграции артефактов</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Реализовать механизм отправки запроса на запуск сбора данных по артефактам.<br/> 2. Реализовать механизм получения данных из сервиса получения данных попроцессу миграции jar данных..<br/> 3. Реализовать механизм растчета статистики по процессу миграции jar</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-010</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернут сервис отправки запроса и расчета статистики на основе полученных данных из сервиса получения данных попроцессу миграции jar.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-014</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм формирвоания общего отчета</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизм формирования общего отчета по процессу миграции  системы</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты для создания таблиц: HISTORY_ARTIFACTS, HISTORY_DB_OBJECT, MIGARTION_STATUS.<br/> 2. Реализовать форму просмотра отчетов.<br/> 3. Реализовать механизм формирования общего отчета по процессу миграции.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-013</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Баюров Сергей Вячеславович</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#usscms-user-story">User Story Map по USSCMS</a><br/><a href="../../uiux/#wf13">Макет экранной формы "Форма отчёта"</a><br/><a href="../../model/#модель-данных-сервиса-расчёта-статистики-по-процессу-миграции">Таблицы HISTORY_ARTIFACTS, HISTORY_DB_OBJECT, MIGARTION_STATUS</a><br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd7">SEQ7-Формирование отчета статистики миграции по объектам БД</a> <br/> <a href="../../tasks/assets/Sergo/Seq/#usscms-seqd8">SEQ8-Формирование отчета статистики миграции по артефактам</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#usscms-acus01">USSCMS-ACUS01</a><br/><a href="../AC/#usscms-acus03">USSCMS-ACUS03</a><br/> <a href="../AC/#usscms-acus04">USSCMS-ACUS04</a><br/> <a href="../AC/#usscms-acus13">USSCMS-ACUS13</a><br/> <a href="../AC/#usscms-acus14">USSCMS-ACUS14</a> <br/> <a href="../AC/#usscms-acus15">USSCMS-ACUS15</a><br/> <a href="../AC/#usscms-acus15">USSCMS-ACUS16</a> <br/> <a href="../AC/#ussdtodb-acus07">USSDTODB-ACUS07</a> <br/> <a href="../AC/#ussdtodb-acus08">USSDTODB-ACUS08</a> <br/> <a href="../AC/#ussdtodb-acus15">USSDTODB-ACUS15</a> <br/> <a href="../AC/#ussdtodb-acus16">USSDTODB-ACUS16</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#CMS</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>1. Развернута база данных с таблицами: HISTORY_ARTIFACTS, HISTORY_DB_OBJECT, MIGARTION_STATUS.<br/> 2. Развернута web форма просмотра отчетов.<br/> 3. Развернут сервис формирования общего отчета по процессу миграции.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-015</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Контракт получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация контракта для получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты создания таблиц для хранения информации по модулям и проектам.<br/>2. Реализовать механизм получения запросов и данных из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-007</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Лука Руслан Николаевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdta-user-story">User Story Map по USSDTA</a><br/><a href="../../model/#модель-данных-сервиса-получения-данных-по-процессу-миграции-jar">Таблицы MODULES, ARTIFACT_MODULES_DUNCPART_CON</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTA</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицами MODULES, ARTIFACT_MODULES_DUNCPART_CON. Развернут сервис с механизмом получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-016</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм получения информации по объектам клиентской части</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения и хранения информации по объектам клиентсвой части из Jenkins</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипт создания таблицы для хранения информации по клиентсвой части согласно модели данных.<br/>2. Реализовать отправку запроса на получение информации по объектам клиеентской части</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-015</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Лука Руслан Николаевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdta-user-story">User Story Map по USSDTA</a><br/><a href="../../model/#модель-данных-сервиса-получения-данных-по-процессу-миграции-jar">Таблица ARTIFACTS_ELEMENTS</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdta-acus08">USSDTA-ACUS08</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTA</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицей ARTIFACTS_ELEMENTS. Развернут сервис для получения информации по объектам клиентсвой части на основе данных из Jenkins</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-017</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм анализа объектов клиентской части</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма анализа и хранения информации по объектам клиентской части</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипт создания таблицы для хранения информации по клиентсвой части согласно модели данных.<br/>2. Реализовать алгоритм анализа объектов клиентской части</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-016</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Лука Руслан Николаевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdta-user-story">User Story Map по USSDTA</a><br/><a href="../../model/#модель-данных-сервиса-получения-данных-по-процессу-миграции-jar">Таблица HISTORY_ARTIFACTS</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdta-acus01">USSDTA-ACUS01</a><br/><a href="../AC/#ussdta-acus02">USSDTA-ACUS02</a><br/><a href="../AC/#ussdta-acus03">USSDTA-ACUS03</a><br/><a href="../AC/#ussdta-acus04">USSDTA-ACUS04</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTA</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицей HISTORY_ARTIFACTS. Развернут сервис для анализа объектаов клиентсвой части</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-018</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм отправки данных в сервис расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма отправки данных в сервис расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Реализовать отправку данных по объектам клиентской части в очередь RabbitMQ</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-017</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Лука Руслан Николаевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdta-user-story">User Story Map по USSDTA</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTA</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернут сервис с механизмом тправку данных по объектам клиентской части в очередь RabbitMQ</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-019</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Контракт получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация контракта для получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты создания таблиц для хранения информации по модулям и проектам.<br/>2. Реализовать механизм получения запросов и данных из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-007</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Орлов Александр Дмитриевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdtodb-user-story">User Story Map по USSDTODB</a><br/><a href="../../model/#модель-данных-сервиса-получения-данных-по-процессу-миграции-объектов-бд">Таблицы PROJECTS ,MODULES, USER, PROJECT_USER_CON, USER_GROUP_CON, USER, FUNC_GROUP, JIRA_TASKS, JIRA_TASKS_WORK_LOG</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdtodb-acus01">USSDTODB-ACUS01</a> <br/><a href="../AC/#ussdtodb-acus04">USSDTODB-ACUS04</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTOBD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицами PROJECTS ,MODULES, USER, PROJECT_USER_CON, USER_GROUP_CON, USER, FUNC_GROUP, JIRA_TASKS, JIRA_TASKS_WORK_LOG. Развернут сервис с механизмом получения запросов из сервиса расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-020</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм получения информации объектов серверной части</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма получения информации объектов серверной части</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>1. Сформировать скрипты создания таблиц для хранения информации объектов серверной части<br/> 2. Реализовать механизм получения информации объектов серверной части Oracle<br/> 3. Реализовать механизм получения информации объектов серверной части Postgres<br/> 4. Реализация механизма сохранения информации объектов серверной части</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-019</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Орлов Александр Дмитриевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdtodb-user-story">User Story Map по USSDTODB</a><br/><a href="../../model/#модель-данных-сервиса-получения-данных-по-процессу-миграции-объектов-бд">Таблицы DB_OBJECTS, DB_OBJECTS_CON, DB_OBJECTS_HISTORY, DB_OBJECTS_HISTORY_TYPE, DB_OBJECTS_MODULES_FUNCPART_CON,FUNC_PART</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdtodb-acus09">USSDTODB-ACUS09</a> <br/><a href="../AC/#ussdtodb-acus11">USSDTODB-ACUS11</a> <br/><a href="../AC/#ussdtodb-acus12">USSDTODB-ACUS12</a><br/><a href="../AC/#ussdtodb-acus15">USSDTODB-ACUS15</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTOBD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернута база данных с таблицами DB_OBJECTS, DB_OBJECTS_CON, DB_OBJECTS_HISTORY, DB_OBJECTS_HISTORY_TYPE, DB_OBJECTS_MODULES_FUNCPART_CON,FUNC_PART. Развернут сервис с механизмом получения информации объектов баз данных из Oracle и Postgres</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-021</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм анализа объектов серверной части</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма анализа и хранения информации по объектам серверной части</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Реализовать алгоритм анализа объектов серверной части</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-019</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Орлов Александр Дмитриевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdtodb-user-story">User Story Map по USSDTODB</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td><a href="../AC/#ussdtodb-acus16">USSCMS-ACUS16</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTOBD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернут сервис с механизмом анализа и хранения информации по объектам серверной части</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>№</th>
+<th>Наименование</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>ID_задачи</td>
+<td>MIGRXXI-022</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Название задачи</td>
+<td>Механизм отправки данных в сервис расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Краткое описание</td>
+<td>Реализация механизма отправки данных в сервис расчёта статистики миграции</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Что требуется</td>
+<td>Реализовать отправку данных по объектам серверной части в очередь RabbitMQ</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Вышестоящая задача</td>
+<td>MIGRXXI-021</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Автор</td>
+<td>Орлов Александр Дмитриевич</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Кому назначено</td>
+<td>Inversion-Dev-Group</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Размещение постановки</td>
+<td><a href="../../requirements/#ussdtodb-user-story">User Story Map по USSDTODB</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Критерии приёмки</td>
+<td>-</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Статус</td>
+<td>Ожидает исполнения</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Приоритет</td>
+<td>Средний</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Метка</td>
+<td>#DTOBD</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Спринт</td>
+<td>102432.0042</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Предусловие выполнения</td>
+<td>Развернут сервис с механизмом тправку данных по объектам серверной части в очередь RabbitMQ</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Окружение</td>
+<td>OC Windows 7, Microsoft Edge Версия 134.0.3124.51</td>
+</tr>
+</tbody>
+</table>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -485,7 +2376,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Нижний колонтитул" class="md-footer__inner md-grid">
-<a aria-label="Назад: API приложения через gRPC" class="md-footer__link md-footer__link--prev" href="../../api/">
+<a aria-label="Назад: API приложений через gRPC" class="md-footer__link md-footer__link--prev" href="../../api/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -494,17 +2385,17 @@
                 Назад
               </span>
 <div class="md-ellipsis">
-                API приложения через gRPC
+                API приложений через gRPC
               </div>
 </div>
 </a>
-<a aria-label="Вперед: Задачи по разработке сервиса расчёта статистики миграции" class="md-footer__link md-footer__link--next" href="../../tasks/USSCMS/">
+<a aria-label="Вперед: Cервис расчёта статистики миграции" class="md-footer__link md-footer__link--next" href="../../tests/USSCMS/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Вперед
               </span>
 <div class="md-ellipsis">
-                Задачи по разработке сервиса расчёта статистики миграции
+                Cервис расчёта статистики миграции
               </div>
 </div>
 <div class="md-footer__button md-icon">

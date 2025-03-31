@@ -163,6 +163,139 @@ message Calculate_Response{
 
 ## Сервис данных по процессу миграци JAR
 
-### Artifact info Service
+<table style="border:1px solid black;background-color:lightgrey;">
+<tr>
+   <td>
+   <pre>
+import "google/protobuf/empty.proto";
+import "date.proto";
+import "datetime.proto";
 
-### Calculation Service
+option java_multiple_files = true;
+option java_package = "ru.tbank.cbp.gb.revaluation.initial.proto";
+option java_outer_classname = "CloseDayActionTransport";
+option objc_class_prefix = "ATR";
+
+option java_generate_equals_and_hash = true;
+option optimize_for = LITE_RUNTIME;
+
+package account_transport;
+
+// Определение gRPC-сервиса
+service CloseDayActionTransportService {
+
+  //ArtifactsInfoService
+  //Создание модуля - server - ArtifactsInfoService, client - gateway
+  rpc AddModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  //Удаление модуля - server - ArtifactsInfoService, client - gateway
+  rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
+  //Изменение наименования модуля - server - ArtifactsInfoService, client - gateway
+  rpc EditModuleName(UpdateModuleMessage) returns (google.protobuf.Empty) {}
+  //Привязка файлов к модулю (только для filetype = present) - server - ArtifactsInfoService, client - gateway
+  rpc LinkFile(ModuleFiles) returns (google.protobuf.Empty) {}
+  //Отвязка файлов от модуля  (только для filetype = present) - server - ArtifactsInfoService, client - gateway
+  rpc UnLinkFile(ModuleFiles) returns (google.protobuf.Empty) {}
+  //Удаление файла, например если он более не будет в svn для filetype = missing - server - ArtifactsInfoService, client - gateway
+  rpc DeleteFiles(FilesMessage) returns (google.protobuf.Empty) {}
+
+  //Списки файлов
+  //Запрос списка непривязанных файлов (Исключительно файлы) - server - ArtifactsInfoService, client - gateway
+  rpc UnAttachedFiles(google.protobuf.Empty) returns (stream FilesMessage) { }
+  //Запрос списка модулей с файлами (Модуль + файлы) - server - ArtifactsInfoService, client - gateway
+  rpc AttachedFiles(google.protobuf.Empty) returns (stream ModulesFilesMessage) { }
+  //Запрос списка привязанных и непривязанных модулей с файлами (Привязанные и непривязанные)
+  //server - ArtifactsInfoService, client - gateway, calculation service (2)
+  rpc AllFiles(google.protobuf.Empty) returns (stream ModulesFilesWithFilesMessage) { }
+
+
+  //Список файлов по модулям (на вход - список модулей, на выход - список файлов)
+  //server - ArtifactsInfoService, client - calculation service
+  rpc AllFilesByModules(stream ModulesMessage) returns (stream FilesMessage) { } //add state
+  //End of ArtifactsInfoService
+
+
+  //Запрос на полный перерасчет - server - CalculationService, client - gateway
+  rpc RecalculateAll(RecalculationAllMessage) returns (google.protobuf.Empty) {}
+  //Запрос на перерасчет по модулям - server - CalculationService, client - gateway
+  rpc RecalculateByModules(RecalculationByModulesMessage) returns (google.protobuf.Empty) {}
+
+  //Инф-ия о выгрузке - server - gateway, client - CalculationService
+  rpc PreparedFilesCalculation(PreparedRecalculationMessage) returns (google.protobuf.Empty) {}
+}
+
+// Сообщение для одной операции
+message CloseDayAction {
+  google.type.Date date = 1;
+  string proc = 2; // Тип ГП (reval, sm_reval)
+  string action = 3; // Тип операции (register, revert)
+}
+
+message Module {
+  string id = 1;
+  string name = 2;
+}
+
+message File {
+  int64 id = 1;
+  string name = 2;
+  string path = 3;
+  google.type.DateTime dateCreation = 4;
+  ArtifactType artifact_type = 5;
+  string moduleUuid = 6;
+  string projectUuid = 7;
+}
+
+enum ArtifactType {
+  PRESENT = 0;
+  MISSING = 1;
+}
+
+message UpdateModuleMessage {
+  Module module = 1;
+  string new_name = 2;
+}
+
+message ModuleMessage {
+  Module module = 1;
+}
+
+message ModulesMessage {
+  repeated Module module = 1;
+}
+
+message ModuleFiles {
+  string project_uuid = 1;
+  Module module = 2;
+  repeated File file = 3;
+}
+
+message ModulesFilesMessage {
+  repeated ModuleFiles module_file_list = 1;
+}
+
+message ModulesFilesWithFilesMessage {
+  repeated ModuleFiles module_file_list = 1;
+  repeated File unattached_files = 2;
+}
+
+message FilesMessage {
+  repeated File files = 1;
+}
+
+message RecalculationByModulesMessage {
+  string uuid = 1;
+  repeated Module modules = 2;
+}
+
+message RecalculationAllMessage {
+  string uuid = 1;
+}
+
+message PreparedRecalculationMessage {
+  string uuid = 1;
+  uint64 count = 2;
+}
+</pre>
+   </td>
+  </tr>
+</table>

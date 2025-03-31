@@ -450,20 +450,6 @@
 <nav aria-label="Тест-кейсы MVP" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      Основной сценарий
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      Негативный сценарий
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#us1">
 <span class="md-ellipsis">
       US1
@@ -671,93 +657,9 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.</span> Создание задачи на миграцию объекта<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <h2 id="-mvp"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1</span> Тест-кейсы MVP<a class="headerlink" href="#-mvp" title="Permanent link">¶</a></h2>
-<h3 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.1</span> Основной сценарий<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
-<table>
-<thead>
-<tr>
-<th>Шаг</th>
-<th>Описание шага</th>
-<th>Результат</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Открыть форму аутентификации клиентов <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит форму аутентификации клиента</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Заполнить логин (email) и пароль</td>
-<td>Пользователь видит заполненные логин и пароль</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Нажать кнопку аутентификации</td>
-<td>Выполняется переход в личный кабинет клиента</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.2</span> Негативный сценарий<a class="headerlink" href="#_3" title="Permanent link">¶</a></h3>
-<table>
-<thead>
-<tr>
-<th>Шаг</th>
-<th>Описание шага</th>
-<th>Результат</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Открыть форму аутентификации клиента <a href="../../uiux/#wf3">WF3</a></td>
-<td>Пользователь видит форму регистрации клиентов</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Заполнить логин (email) и пароль</td>
-<td>Пользователь видит заполненные логин и пароль</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Нажать кнопку аутентификации</td>
-<td>Выводится сообщение об ошибке аутентификации</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Нажать кнопку восстановления пароля</td>
-<td>Выводится диалоговое окно восстановления пароля</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Ввести в диалоговое окно email, указанный при регистрации</td>
-<td></td>
-</tr>
-<tr>
-<td>6</td>
-<td>Нажать кнопку отправки сообщения для воостановления пароля</td>
-<td>Пользователю на указанный email приходит соощени со ссылкой на восстановление пароля</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Перейти по ссылке для восстановления пароля</td>
-<td>Выводится окно для ввода нового пароля</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Ввести новый пароль</td>
-<td></td>
-</tr>
-<tr>
-<td>9</td>
-<td>Нажать кнопку сохранения нового пароля</td>
-<td>Выполняется переход в личный кабинет клиента</td>
-</tr>
-</tbody>
-</table>
-<h3 id="us1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.3</span> US1<a class="headerlink" href="#us1" title="Permanent link">¶</a></h3>
-<h3 id="ac1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.4</span> AC1 Отображение привязки объектов и наличие навигационной панели<a class="headerlink" href="#ac1" title="Permanent link">¶</a></h3>
-<h4 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.4.1</span> Основной сценарий<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
+<h3 id="us1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.1</span> US1<a class="headerlink" href="#us1" title="Permanent link">¶</a></h3>
+<h3 id="ac1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.2</span> AC1 Отображение привязки объектов и наличие навигационной панели<a class="headerlink" href="#ac1" title="Permanent link">¶</a></h3>
+<h4 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.2.1</span> Основной сценарий<a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -784,8 +686,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.5</span> AC2 Наличие привязки объектов к одному проекту<a class="headerlink" href="#ac2" title="Permanent link">¶</a></h3>
-<h4 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.5.1</span> Основной сценарий<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
+<h3 id="ac2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.3</span> AC2 Наличие привязки объектов к одному проекту<a class="headerlink" href="#ac2" title="Permanent link">¶</a></h3>
+<h4 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.3.1</span> Основной сценарий<a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -807,8 +709,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6</span> AC3 Проверка перестройки списка<a class="headerlink" href="#ac3" title="Permanent link">¶</a></h3>
-<h4 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6.1</span> Основной сценарий<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
+<h3 id="ac3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.4</span> AC3 Проверка перестройки списка<a class="headerlink" href="#ac3" title="Permanent link">¶</a></h3>
+<h4 id="_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.4.1</span> Основной сценарий<a class="headerlink" href="#_4" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -830,7 +732,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6.2</span> Негативный сценарий - У сервиса отсутствует доступ к БД<a class="headerlink" href="#-" title="Permanent link">¶</a></h4>
+<h4 id="-"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.4.2</span> Негативный сценарий - У сервиса отсутствует доступ к БД<a class="headerlink" href="#-" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -852,7 +754,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac4-5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7</span> AC4-5 Навигация<a class="headerlink" href="#ac4-5" title="Permanent link">¶</a></h3>
+<h3 id="ac4-5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.5</span> AC4-5 Навигация<a class="headerlink" href="#ac4-5" title="Permanent link">¶</a></h3>
 <table>
 <thead>
 <tr>
@@ -889,8 +791,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8</span> US2<a class="headerlink" href="#us2" title="Permanent link">¶</a></h3>
-<h4 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.1</span> Основной сценарий через управление мышью<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
+<h3 id="us2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6</span> US2<a class="headerlink" href="#us2" title="Permanent link">¶</a></h3>
+<h4 id="_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6.1</span> Основной сценарий через управление мышью<a class="headerlink" href="#_5" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -927,7 +829,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.2</span> Основной сценарий через управление горячими клавишами<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
+<h4 id="_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.6.2</span> Основной сценарий через управление горячими клавишами<a class="headerlink" href="#_6" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -954,9 +856,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9</span> US3<a class="headerlink" href="#us3" title="Permanent link">¶</a></h3>
-<h4 id="ac1_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.1</span> AC1<a class="headerlink" href="#ac1_1" title="Permanent link">¶</a></h4>
-<h4 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.2</span> Основной сценарий<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
+<h3 id="us3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7</span> US3<a class="headerlink" href="#us3" title="Permanent link">¶</a></h3>
+<h4 id="ac1_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.1</span> AC1<a class="headerlink" href="#ac1_1" title="Permanent link">¶</a></h4>
+<h4 id="_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.2</span> Основной сценарий<a class="headerlink" href="#_7" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -988,8 +890,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac2_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.3</span> AC2<a class="headerlink" href="#ac2_1" title="Permanent link">¶</a></h4>
-<h4 id="_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.4</span> Основной сценарий<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
+<h4 id="ac2_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.3</span> AC2<a class="headerlink" href="#ac2_1" title="Permanent link">¶</a></h4>
+<h4 id="_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.4</span> Основной сценарий<a class="headerlink" href="#_8" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1016,8 +918,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac3_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.5</span> AC3<a class="headerlink" href="#ac3_1" title="Permanent link">¶</a></h4>
-<h4 id="_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.6</span> Основной сценарий<a class="headerlink" href="#_11" title="Permanent link">¶</a></h4>
+<h4 id="ac3_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.5</span> AC3<a class="headerlink" href="#ac3_1" title="Permanent link">¶</a></h4>
+<h4 id="_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.6</span> Основной сценарий<a class="headerlink" href="#_9" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1039,9 +941,9 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.7</span> AC4<a class="headerlink" href="#ac4" title="Permanent link">¶</a></h4>
-<h4 id="_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.8</span> Основной сценарий<a class="headerlink" href="#_12" title="Permanent link">¶</a></h4>
-<h4 id="_13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.9</span> Основной сценарий<a class="headerlink" href="#_13" title="Permanent link">¶</a></h4>
+<h4 id="ac4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.7</span> AC4<a class="headerlink" href="#ac4" title="Permanent link">¶</a></h4>
+<h4 id="_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.8</span> Основной сценарий<a class="headerlink" href="#_10" title="Permanent link">¶</a></h4>
+<h4 id="_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.9</span> Основной сценарий<a class="headerlink" href="#_11" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1078,7 +980,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.10</span> Негативный сценарий - Отмена удаления фильтра<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h4>
+<h4 id="-_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.7.10</span> Негативный сценарий - Отмена удаления фильтра<a class="headerlink" href="#-_1" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1115,9 +1017,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10</span> US4<a class="headerlink" href="#us4" title="Permanent link">¶</a></h3>
-<h4 id="ac1_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.1</span> AC1<a class="headerlink" href="#ac1_2" title="Permanent link">¶</a></h4>
-<h4 id="_14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.2</span> Основной сценарий<a class="headerlink" href="#_14" title="Permanent link">¶</a></h4>
+<h3 id="us4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8</span> US4<a class="headerlink" href="#us4" title="Permanent link">¶</a></h3>
+<h4 id="ac1_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.1</span> AC1<a class="headerlink" href="#ac1_2" title="Permanent link">¶</a></h4>
+<h4 id="_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.2</span> Основной сценарий<a class="headerlink" href="#_12" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1144,8 +1046,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac2_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.3</span> AC2<a class="headerlink" href="#ac2_2" title="Permanent link">¶</a></h4>
-<h4 id="_15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.4</span> Основной сценарий<a class="headerlink" href="#_15" title="Permanent link">¶</a></h4>
+<h4 id="ac2_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.3</span> AC2<a class="headerlink" href="#ac2_2" title="Permanent link">¶</a></h4>
+<h4 id="_13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.4</span> Основной сценарий<a class="headerlink" href="#_13" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1182,8 +1084,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac3_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.5</span> AC3<a class="headerlink" href="#ac3_2" title="Permanent link">¶</a></h4>
-<h4 id="_16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.6</span> Основной сценарий<a class="headerlink" href="#_16" title="Permanent link">¶</a></h4>
+<h4 id="ac3_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.5</span> AC3<a class="headerlink" href="#ac3_2" title="Permanent link">¶</a></h4>
+<h4 id="_14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.6</span> Основной сценарий<a class="headerlink" href="#_14" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1210,8 +1112,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac4_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.7</span> AC4<a class="headerlink" href="#ac4_1" title="Permanent link">¶</a></h4>
-<h4 id="_17"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.8</span> Основной сценарий<a class="headerlink" href="#_17" title="Permanent link">¶</a></h4>
+<h4 id="ac4_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.7</span> AC4<a class="headerlink" href="#ac4_1" title="Permanent link">¶</a></h4>
+<h4 id="_15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.8.8</span> Основной сценарий<a class="headerlink" href="#_15" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1238,9 +1140,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11</span> US5<a class="headerlink" href="#us5" title="Permanent link">¶</a></h3>
-<h4 id="ac1_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.1</span> AC1<a class="headerlink" href="#ac1_3" title="Permanent link">¶</a></h4>
-<h4 id="_18"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.2</span> Основной сценарий<a class="headerlink" href="#_18" title="Permanent link">¶</a></h4>
+<h3 id="us5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9</span> US5<a class="headerlink" href="#us5" title="Permanent link">¶</a></h3>
+<h4 id="ac1_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.1</span> AC1<a class="headerlink" href="#ac1_3" title="Permanent link">¶</a></h4>
+<h4 id="_16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.2</span> Основной сценарий<a class="headerlink" href="#_16" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1267,8 +1169,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac2_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.3</span> AC2<a class="headerlink" href="#ac2_3" title="Permanent link">¶</a></h4>
-<h4 id="-_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.4</span> Основной сценарий - объект с привязкой<a class="headerlink" href="#-_2" title="Permanent link">¶</a></h4>
+<h4 id="ac2_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.3</span> AC2<a class="headerlink" href="#ac2_3" title="Permanent link">¶</a></h4>
+<h4 id="-_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.4</span> Основной сценарий - объект с привязкой<a class="headerlink" href="#-_2" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1295,7 +1197,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.5</span> Негативный сценарий - объект без привязки<a class="headerlink" href="#-_3" title="Permanent link">¶</a></h4>
+<h4 id="-_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.5</span> Негативный сценарий - объект без привязки<a class="headerlink" href="#-_3" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1322,8 +1224,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac3_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.6</span> AC3<a class="headerlink" href="#ac3_3" title="Permanent link">¶</a></h4>
-<h4 id="_19"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.7</span> Основной сценарий<a class="headerlink" href="#_19" title="Permanent link">¶</a></h4>
+<h4 id="ac3_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.6</span> AC3<a class="headerlink" href="#ac3_3" title="Permanent link">¶</a></h4>
+<h4 id="_17"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.7</span> Основной сценарий<a class="headerlink" href="#_17" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1365,8 +1267,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac4_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.8</span> AC4<a class="headerlink" href="#ac4_2" title="Permanent link">¶</a></h4>
-<h4 id="_20"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.9</span> Основной сценарий<a class="headerlink" href="#_20" title="Permanent link">¶</a></h4>
+<h4 id="ac4_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.8</span> AC4<a class="headerlink" href="#ac4_2" title="Permanent link">¶</a></h4>
+<h4 id="_18"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.9</span> Основной сценарий<a class="headerlink" href="#_18" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1403,7 +1305,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.10</span> Негативный сценарий - отсутствует исполнитель<a class="headerlink" href="#-_4" title="Permanent link">¶</a></h4>
+<h4 id="-_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.10</span> Негативный сценарий - отсутствует исполнитель<a class="headerlink" href="#-_4" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1435,8 +1337,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.11</span> AC5<a class="headerlink" href="#ac5" title="Permanent link">¶</a></h4>
-<h4 id="_21"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.12</span> Основной сценарий<a class="headerlink" href="#_21" title="Permanent link">¶</a></h4>
+<h4 id="ac5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.11</span> AC5<a class="headerlink" href="#ac5" title="Permanent link">¶</a></h4>
+<h4 id="_19"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.12</span> Основной сценарий<a class="headerlink" href="#_19" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1473,8 +1375,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.13</span> AC6<a class="headerlink" href="#ac6" title="Permanent link">¶</a></h4>
-<h4 id="_22"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.14</span> Основной сценарий<a class="headerlink" href="#_22" title="Permanent link">¶</a></h4>
+<h4 id="ac6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.13</span> AC6<a class="headerlink" href="#ac6" title="Permanent link">¶</a></h4>
+<h4 id="_20"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.14</span> Основной сценарий<a class="headerlink" href="#_20" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1511,8 +1413,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="us6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.15</span> US6<a class="headerlink" href="#us6" title="Permanent link">¶</a></h4>
-<h4 id="_23"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.16</span> Основной сценарий<a class="headerlink" href="#_23" title="Permanent link">¶</a></h4>
+<h4 id="us6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.15</span> US6<a class="headerlink" href="#us6" title="Permanent link">¶</a></h4>
+<h4 id="_21"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.16</span> Основной сценарий<a class="headerlink" href="#_21" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1549,7 +1451,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.17</span> Негативный сценарий - проект не найден в Jira<a class="headerlink" href="#-jira" title="Permanent link">¶</a></h4>
+<h4 id="-jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.9.17</span> Негативный сценарий - проект не найден в Jira<a class="headerlink" href="#-jira" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1586,8 +1488,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12</span> US7<a class="headerlink" href="#us7" title="Permanent link">¶</a></h3>
-<h4 id="-_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.1</span> Основной сценарий - Показать на экране<a class="headerlink" href="#-_5" title="Permanent link">¶</a></h4>
+<h3 id="us7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10</span> US7<a class="headerlink" href="#us7" title="Permanent link">¶</a></h3>
+<h4 id="-_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.1</span> Основной сценарий - Показать на экране<a class="headerlink" href="#-_5" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1624,7 +1526,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.2</span> Альтернативный сценарий - Показать на компьютере и открыть<a class="headerlink" href="#-_6" title="Permanent link">¶</a></h4>
+<h4 id="-_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.2</span> Альтернативный сценарий - Показать на компьютере и открыть<a class="headerlink" href="#-_6" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1666,7 +1568,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.3</span> Альтернативный сценарий - Распечатать на принтере<a class="headerlink" href="#-_7" title="Permanent link">¶</a></h4>
+<h4 id="-_7"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.3</span> Альтернативный сценарий - Распечатать на принтере<a class="headerlink" href="#-_7" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1703,7 +1605,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.4</span> Негативный сценарий - Время формирования отчета превышает 1 минуту<a class="headerlink" href="#-1" title="Permanent link">¶</a></h4>
+<h4 id="-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.10.4</span> Негативный сценарий - Время формирования отчета превышает 1 минуту<a class="headerlink" href="#-1" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1740,8 +1642,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13</span> US8<a class="headerlink" href="#us8" title="Permanent link">¶</a></h3>
-<h4 id="-_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.1</span> Основной сценарий - выбор всех проектов<a class="headerlink" href="#-_8" title="Permanent link">¶</a></h4>
+<h3 id="us8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11</span> US8<a class="headerlink" href="#us8" title="Permanent link">¶</a></h3>
+<h4 id="-_8"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.1</span> Основной сценарий - выбор всех проектов<a class="headerlink" href="#-_8" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1783,7 +1685,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.2</span> Альтернативный сценарий - выбор одного проекта<a class="headerlink" href="#-_9" title="Permanent link">¶</a></h4>
+<h4 id="-_9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.2</span> Альтернативный сценарий - выбор одного проекта<a class="headerlink" href="#-_9" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1825,7 +1727,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.3</span> Негативный сценарий: Время построения превышает 1 минуту<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
+<h4 id="1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.11.3</span> Негативный сценарий: Время построения превышает 1 минуту<a class="headerlink" href="#1" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1867,8 +1769,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14</span> US9<a class="headerlink" href="#us9" title="Permanent link">¶</a></h3>
-<h4 id="-_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14.1</span> Основной сценарий - отображение зависимостей для объекта с зависимостями<a class="headerlink" href="#-_10" title="Permanent link">¶</a></h4>
+<h3 id="us9"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12</span> US9<a class="headerlink" href="#us9" title="Permanent link">¶</a></h3>
+<h4 id="-_10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.1</span> Основной сценарий - отображение зависимостей для объекта с зависимостями<a class="headerlink" href="#-_10" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1900,7 +1802,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14.2</span> Альтернативный сценарий - отображение зависимостей для объекта с зависимостями<a class="headerlink" href="#-_11" title="Permanent link">¶</a></h4>
+<h4 id="-_11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.12.2</span> Альтернативный сценарий - отображение зависимостей для объекта с зависимостями<a class="headerlink" href="#-_11" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1932,9 +1834,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15</span> US10<a class="headerlink" href="#us10" title="Permanent link">¶</a></h3>
-<h4 id="ac1_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.1</span> AC1<a class="headerlink" href="#ac1_4" title="Permanent link">¶</a></h4>
-<h4 id="_24"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.2</span> Основной сценарий<a class="headerlink" href="#_24" title="Permanent link">¶</a></h4>
+<h3 id="us10"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13</span> US10<a class="headerlink" href="#us10" title="Permanent link">¶</a></h3>
+<h4 id="ac1_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.1</span> AC1<a class="headerlink" href="#ac1_4" title="Permanent link">¶</a></h4>
+<h4 id="_22"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.2</span> Основной сценарий<a class="headerlink" href="#_22" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1961,8 +1863,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac2_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.3</span> AC2<a class="headerlink" href="#ac2_4" title="Permanent link">¶</a></h4>
-<h4 id="_25"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.4</span> Основной сценарий<a class="headerlink" href="#_25" title="Permanent link">¶</a></h4>
+<h4 id="ac2_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.3</span> AC2<a class="headerlink" href="#ac2_4" title="Permanent link">¶</a></h4>
+<h4 id="_23"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.4</span> Основной сценарий<a class="headerlink" href="#_23" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -1989,7 +1891,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.5</span> Негативный сценарий - есть незавершённые объекты, от которых зависит текущий<a class="headerlink" href="#-_12" title="Permanent link">¶</a></h4>
+<h4 id="-_12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.13.5</span> Негативный сценарий - есть незавершённые объекты, от которых зависит текущий<a class="headerlink" href="#-_12" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2016,8 +1918,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.16</span> US11<a class="headerlink" href="#us11" title="Permanent link">¶</a></h3>
-<h4 id="_26"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.16.1</span> Основной сценарий<a class="headerlink" href="#_26" title="Permanent link">¶</a></h4>
+<h3 id="us11"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14</span> US11<a class="headerlink" href="#us11" title="Permanent link">¶</a></h3>
+<h4 id="_24"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14.1</span> Основной сценарий<a class="headerlink" href="#_24" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2054,7 +1956,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-table"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.16.2</span> Негативный сценарий - Выбран объект не с типом "TABLE"<a class="headerlink" href="#-table" title="Permanent link">¶</a></h4>
+<h4 id="-table"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14.2</span> Негативный сценарий - Выбран объект не с типом "TABLE"<a class="headerlink" href="#-table" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2081,7 +1983,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.16.3</span> Негативный сценарий - Произошла ошибка при миграции<a class="headerlink" href="#-_13" title="Permanent link">¶</a></h4>
+<h4 id="-_13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.14.3</span> Негативный сценарий - Произошла ошибка при миграции<a class="headerlink" href="#-_13" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2113,8 +2015,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.17</span> US12<a class="headerlink" href="#us12" title="Permanent link">¶</a></h3>
-<h4 id="_27"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.17.1</span> Основной сценарий<a class="headerlink" href="#_27" title="Permanent link">¶</a></h4>
+<h3 id="us12"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15</span> US12<a class="headerlink" href="#us12" title="Permanent link">¶</a></h3>
+<h4 id="_25"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.15.1</span> Основной сценарий<a class="headerlink" href="#_25" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2166,9 +2068,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.18</span> US13<a class="headerlink" href="#us13" title="Permanent link">¶</a></h3>
-<h3 id="ac1_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.19</span> AC1<a class="headerlink" href="#ac1_5" title="Permanent link">¶</a></h3>
-<h4 id="-1_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.19.1</span> Тест-кейс 1: Проверка фиксированного списка статусов<a class="headerlink" href="#-1_1" title="Permanent link">¶</a></h4>
+<h3 id="us13"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.16</span> US13<a class="headerlink" href="#us13" title="Permanent link">¶</a></h3>
+<h3 id="ac1_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.17</span> AC1<a class="headerlink" href="#ac1_5" title="Permanent link">¶</a></h3>
+<h4 id="-1_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.17.1</span> Тест-кейс 1: Проверка фиксированного списка статусов<a class="headerlink" href="#-1_1" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2200,8 +2102,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac2_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20</span> AC2<a class="headerlink" href="#ac2_5" title="Permanent link">¶</a></h3>
-<h4 id="-21"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.1</span> Тест-кейс 2.1: Проверка доступных статусов для роли "Разработчик"<a class="headerlink" href="#-21" title="Permanent link">¶</a></h4>
+<h3 id="ac2_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.18</span> AC2<a class="headerlink" href="#ac2_5" title="Permanent link">¶</a></h3>
+<h4 id="-21"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.18.1</span> Тест-кейс 2.1: Проверка доступных статусов для роли "Разработчик"<a class="headerlink" href="#-21" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2233,7 +2135,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-22"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.2</span> Тест-кейс 2.2: Проверка доступных статусов для роли "Тестировщик"<a class="headerlink" href="#-22" title="Permanent link">¶</a></h4>
+<h4 id="-22"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.18.2</span> Тест-кейс 2.2: Проверка доступных статусов для роли "Тестировщик"<a class="headerlink" href="#-22" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2265,7 +2167,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-23"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.3</span> Тест-кейс 2.3: Проверка доступных статусов для роли "Руководитель"<a class="headerlink" href="#-23" title="Permanent link">¶</a></h4>
+<h4 id="-23"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.18.3</span> Тест-кейс 2.3: Проверка доступных статусов для роли "Руководитель"<a class="headerlink" href="#-23" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2298,8 +2200,8 @@
 </tbody>
 </table>
 <hr/>
-<h3 id="ac3_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21</span> AC3<a class="headerlink" href="#ac3_4" title="Permanent link">¶</a></h3>
-<h4 id="-31"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21.1</span> Тест-кейс 3.1: Автоматическая установка статуса "Готово для миграции"<a class="headerlink" href="#-31" title="Permanent link">¶</a></h4>
+<h3 id="ac3_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.19</span> AC3<a class="headerlink" href="#ac3_4" title="Permanent link">¶</a></h3>
+<h4 id="-31"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.19.1</span> Тест-кейс 3.1: Автоматическая установка статуса "Готово для миграции"<a class="headerlink" href="#-31" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2326,7 +2228,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-32"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21.2</span> Тест-кейс 3.2: Автоматическая установка статуса "Не готово для миграции"<a class="headerlink" href="#-32" title="Permanent link">¶</a></h4>
+<h4 id="-32"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.19.2</span> Тест-кейс 3.2: Автоматическая установка статуса "Не готово для миграции"<a class="headerlink" href="#-32" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2354,8 +2256,8 @@
 </tbody>
 </table>
 <hr/>
-<h3 id="ac4_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22</span> AC4<a class="headerlink" href="#ac4_3" title="Permanent link">¶</a></h3>
-<h4 id="-41"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22.1</span> Тест-кейс 4.1: Запрет смены статуса для "Не готово для миграции" и "Исключить из миграции"<a class="headerlink" href="#-41" title="Permanent link">¶</a></h4>
+<h3 id="ac4_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20</span> AC4<a class="headerlink" href="#ac4_3" title="Permanent link">¶</a></h3>
+<h4 id="-41"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.1</span> Тест-кейс 4.1: Запрет смены статуса для "Не готово для миграции" и "Исключить из миграции"<a class="headerlink" href="#-41" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2392,7 +2294,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-42"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22.2</span> Тест-кейс 4.2: Проверка последовательности "В работе" → "Переведено" → "Тестируется" → "Выполнено"<a class="headerlink" href="#-42" title="Permanent link">¶</a></h4>
+<h4 id="-42"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.2</span> Тест-кейс 4.2: Проверка последовательности "В работе" → "Переведено" → "Тестируется" → "Выполнено"<a class="headerlink" href="#-42" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2449,7 +2351,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-43"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22.3</span> Тест-кейс 4.3: Проверка последовательности "В работе" → "Переведено" → "Тестируется" → "Возврат на доработку"<a class="headerlink" href="#-43" title="Permanent link">¶</a></h4>
+<h4 id="-43"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.3</span> Тест-кейс 4.3: Проверка последовательности "В работе" → "Переведено" → "Тестируется" → "Возврат на доработку"<a class="headerlink" href="#-43" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2506,7 +2408,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="_28"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22.4</span> Негативный сценарий: Проверка недопустимого перехода (например, "В работе" → "Тестируется")<a class="headerlink" href="#_28" title="Permanent link">¶</a></h4>
+<h4 id="_26"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.20.4</span> Негативный сценарий: Проверка недопустимого перехода (например, "В работе" → "Тестируется")<a class="headerlink" href="#_26" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2533,8 +2435,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23</span> US14<a class="headerlink" href="#us14" title="Permanent link">¶</a></h3>
-<h4 id="jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.1</span> Основной сценарий: Успешная отправка статуса в Jira<a class="headerlink" href="#jira" title="Permanent link">¶</a></h4>
+<h3 id="us14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21</span> US14<a class="headerlink" href="#us14" title="Permanent link">¶</a></h3>
+<h4 id="jira"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21.1</span> Основной сценарий: Успешная отправка статуса в Jira<a class="headerlink" href="#jira" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2571,7 +2473,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="jira_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.2</span> Негативный сценарий: JIRA недоступна<a class="headerlink" href="#jira_1" title="Permanent link">¶</a></h4>
+<h4 id="jira_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.21.2</span> Негативный сценарий: JIRA недоступна<a class="headerlink" href="#jira_1" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2608,8 +2510,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.24</span> US15<a class="headerlink" href="#us15" title="Permanent link">¶</a></h3>
-<h4 id="_29"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.24.1</span> Основной сценарий<a class="headerlink" href="#_29" title="Permanent link">¶</a></h4>
+<h3 id="us15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22</span> US15<a class="headerlink" href="#us15" title="Permanent link">¶</a></h3>
+<h4 id="_27"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.22.1</span> Основной сценарий<a class="headerlink" href="#_27" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2646,9 +2548,9 @@
 </tr>
 </tbody>
 </table>
-<h3 id="us16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25</span> US16<a class="headerlink" href="#us16" title="Permanent link">¶</a></h3>
-<h4 id="ac1_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.1</span> AC1<a class="headerlink" href="#ac1_6" title="Permanent link">¶</a></h4>
-<h4 id="_30"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.2</span> Основной сценарий<a class="headerlink" href="#_30" title="Permanent link">¶</a></h4>
+<h3 id="us16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23</span> US16<a class="headerlink" href="#us16" title="Permanent link">¶</a></h3>
+<h4 id="ac1_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.1</span> AC1<a class="headerlink" href="#ac1_6" title="Permanent link">¶</a></h4>
+<h4 id="_28"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.2</span> Основной сценарий<a class="headerlink" href="#_28" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2675,7 +2577,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.3</span> Негативный сценарий - Попытка открыть журнал работ без выбора объекта<a class="headerlink" href="#-_14" title="Permanent link">¶</a></h4>
+<h4 id="-_14"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.3</span> Негативный сценарий - Попытка открыть журнал работ без выбора объекта<a class="headerlink" href="#-_14" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2702,8 +2604,8 @@
 </tr>
 </tbody>
 </table>
-<h4 id="ac2_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.4</span> AC2<a class="headerlink" href="#ac2_6" title="Permanent link">¶</a></h4>
-<h4 id="_31"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.5</span> Основной сценарий<a class="headerlink" href="#_31" title="Permanent link">¶</a></h4>
+<h4 id="ac2_6"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.4</span> AC2<a class="headerlink" href="#ac2_6" title="Permanent link">¶</a></h4>
+<h4 id="_29"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.5</span> Основной сценарий<a class="headerlink" href="#_29" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2735,7 +2637,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.6</span> Негативный сценарий - Открытие журнала для объекта без записей<a class="headerlink" href="#-_15" title="Permanent link">¶</a></h4>
+<h4 id="-_15"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.23.6</span> Негативный сценарий - Открытие журнала для объекта без записей<a class="headerlink" href="#-_15" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2762,8 +2664,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac3_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26</span> AC3<a class="headerlink" href="#ac3_5" title="Permanent link">¶</a></h3>
-<h4 id="_32"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26.1</span> Основной сценарий<a class="headerlink" href="#_32" title="Permanent link">¶</a></h4>
+<h3 id="ac3_5"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.24</span> AC3<a class="headerlink" href="#ac3_5" title="Permanent link">¶</a></h3>
+<h4 id="_30"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.24.1</span> Основной сценарий<a class="headerlink" href="#_30" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2810,7 +2712,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="-_16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26.2</span> Негативный сценарий - Попытка сохранить запись с некорректными данными<a class="headerlink" href="#-_16" title="Permanent link">¶</a></h4>
+<h4 id="-_16"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.24.2</span> Негативный сценарий - Попытка сохранить запись с некорректными данными<a class="headerlink" href="#-_16" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2847,8 +2749,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac4_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.27</span> AC4<a class="headerlink" href="#ac4_4" title="Permanent link">¶</a></h3>
-<h4 id="_33"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.27.1</span> Основной сценарий: Проверка наличия полей на форме добавления/изменения<a class="headerlink" href="#_33" title="Permanent link">¶</a></h4>
+<h3 id="ac4_4"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25</span> AC4<a class="headerlink" href="#ac4_4" title="Permanent link">¶</a></h3>
+<h4 id="_31"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.25.1</span> Основной сценарий: Проверка наличия полей на форме добавления/изменения<a class="headerlink" href="#_31" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2880,8 +2782,8 @@
 </tr>
 </tbody>
 </table>
-<h3 id="ac5_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.28</span> AC5<a class="headerlink" href="#ac5_1" title="Permanent link">¶</a></h3>
-<h4 id="_34"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.28.1</span> Основной сценарий<a class="headerlink" href="#_34" title="Permanent link">¶</a></h4>
+<h3 id="ac5_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26</span> AC5<a class="headerlink" href="#ac5_1" title="Permanent link">¶</a></h3>
+<h4 id="_32"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26.1</span> Основной сценарий<a class="headerlink" href="#_32" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>
@@ -2913,7 +2815,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="jira_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.28.2</span> Негативный сценарий: Ошибка синхронизации с Jira<a class="headerlink" href="#jira_2" title="Permanent link">¶</a></h4>
+<h4 id="jira_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">13.1.26.2</span> Негативный сценарий: Ошибка синхронизации с Jira<a class="headerlink" href="#jira_2" title="Permanent link">¶</a></h4>
 <table>
 <thead>
 <tr>

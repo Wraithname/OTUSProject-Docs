@@ -161,22 +161,24 @@ message Calculate_Response{
 <tr>
    <td>
    <pre>
+syntax = "proto3";
+
 import "google/protobuf/empty.proto";
 import "date.proto";
 import "datetime.proto";
 
 option java_multiple_files = true;
-option java_package = "ru.tbank.cbp.gb.revaluation.initial.proto";
-option java_outer_classname = "CloseDayActionTransport";
+option java_package = "ru.inversion.migration.artifact";
+option java_outer_classname = "ArtifactMigration";
 option objc_class_prefix = "ATR";
 
 option java_generate_equals_and_hash = true;
 option optimize_for = LITE_RUNTIME;
 
-package account_transport;
+package artifact_migration;
 
 // Определение gRPC-сервиса
-service CloseDayActionTransportService {
+service ArtifactMigrationService {
 
   //ArtifactsInfoService
   //Создание модуля - server - ArtifactsInfoService, client - gateway
@@ -184,7 +186,7 @@ service CloseDayActionTransportService {
   //Удаление модуля - server - ArtifactsInfoService, client - gateway
   rpc DeleteModule(ModuleMessage) returns (google.protobuf.Empty) {}
   //Изменение наименования модуля - server - ArtifactsInfoService, client - gateway
-  rpc EditModuleName(UpdateModuleMessage) returns (google.protobuf.Empty) {}
+  rpc EditModuleName(ModuleMessage) returns (google.protobuf.Empty) {}
   //Привязка файлов к модулю (только для filetype = present) - server - ArtifactsInfoService, client - gateway
   rpc LinkFile(ModuleFiles) returns (google.protobuf.Empty) {}
   //Отвязка файлов от модуля  (только для filetype = present) - server - ArtifactsInfoService, client - gateway
@@ -217,36 +219,26 @@ service CloseDayActionTransportService {
   rpc PreparedFilesCalculation(PreparedRecalculationMessage) returns (google.protobuf.Empty) {}
 }
 
-// Сообщение для одной операции
-message CloseDayAction {
-  google.type.Date date = 1;
-  string proc = 2; // Тип ГП (reval, sm_reval)
-  string action = 3; // Тип операции (register, revert)
-}
-
 message Module {
-  string id = 1;
-  string name = 2;
+  string module_uuid=1;
+  string module_name=2;
+  string module_description=3;
+  string project_uuid=4;
 }
 
 message File {
-  int64 id = 1;
+  int64 uuid = 1;
   string name = 2;
   string path = 3;
-  google.type.DateTime dateCreation = 4;
+  google.type.DateTime date_creation = 4;
   ArtifactType artifact_type = 5;
-  string moduleUuid = 6;
-  string projectUuid = 7;
+  string module_uuid = 6;
+  string project_uuid = 7;
 }
 
 enum ArtifactType {
   PRESENT = 0;
   MISSING = 1;
-}
-
-message UpdateModuleMessage {
-  Module module = 1;
-  string new_name = 2;
 }
 
 message ModuleMessage {
@@ -258,7 +250,6 @@ message ModulesMessage {
 }
 
 message ModuleFiles {
-  string project_uuid = 1;
   Module module = 2;
   repeated File file = 3;
 }
